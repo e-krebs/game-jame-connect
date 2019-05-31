@@ -18,6 +18,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -114,24 +115,24 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614499314113069" speed="0">
-                    <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\1.png" />
-                    <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\2.png" />
-                    <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\3.png" />
-                    <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\4.png" />
-                    <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\5.png" />
-                    <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\6.png" />
-                    <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\7.png" />
-                    <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\8.png" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="0.500967" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\1.png" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="0.500967" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\2.png" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="0.500967" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\3.png" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="0.500967" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\4.png" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="0.500967" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\5.png" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="0.500967" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\6.png" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="0.500967" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\7.png" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="0.500967" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\8.png" />
                 </animation>
                 <animation framecount="8" loop="1" name="Move" pingpong="0" repeatcount="1" repeatto="0" sid="506209195226699" speed="5">
-                    <frame duration="1" hotspotX="0.501027" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.501027" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.501027" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.501027" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.501027" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.501027" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.501027" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.501027" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="0.500967" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="0.500967" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="0.500967" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="0.500967" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="0.500967" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="0.500967" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="0.500967" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="0.500967" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -150,6 +151,9 @@
                 <behavior-type name="Solid" sid="796495860147864">
                     <behavior id="solid" />
                 </behavior-type>
+                <behavior-type name="ScrollTo" sid="491447309590520">
+                    <behavior id="scrollto" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="310786197097544" speed="5">
@@ -164,7 +168,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="576841401878778" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\square0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" original-source="C:\Users\eprhb\Downloads\square0.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -192,20 +196,20 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="688211045117283" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\1.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\2.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\3.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\4.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\5.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\6.png" />
                 </animation>
                 <animation framecount="6" loop="1" name="Move" pingpong="0" repeatcount="1" repeatto="0" sid="370100760865940" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -213,7 +217,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="299876075093019" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\square1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" original-source="C:\Users\eprhb\Downloads\square1.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -238,6 +242,9 @@
         </object-type>
         <object-type name="exitbox0" sid="124626518274736">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="win" sid="301914884994267" type="boolean" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="595740724311750" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\squarexit.png" />
@@ -246,6 +253,9 @@
         </object-type>
         <object-type name="exitbox1" sid="510909794781536">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="win" sid="955288036549898" type="boolean" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="716733895293756" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\squarexit1.png" />
@@ -253,6 +263,123 @@
             </animation-folder>
         </object-type>
         <object-type name="win" sid="376013322440729">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="sidekick2" sid="110638550182007">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="iscontrolled" sid="745036239584477" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="948900111631597">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="580569373920096">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="669856052219895">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="14" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="415742452502308" speed="0">
+                    <frame duration="1" hotspotX="0.501044" hotspotY="0.501129" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\1.png" />
+                    <frame duration="1" hotspotX="0.501044" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\2.png" />
+                    <frame duration="1" hotspotX="0.501044" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\5.png" />
+                    <frame duration="1" hotspotX="0.501035" hotspotY="0.501031" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\7.png" />
+                    <frame duration="1" hotspotX="0.501023" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\8.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\9.png" />
+                    <frame duration="1" hotspotX="0.501035" hotspotY="0.501031" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\11.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\12.png" />
+                    <frame duration="1" hotspotX="0.501044" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\13.png" />
+                    <frame duration="1" hotspotX="0.501044" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\14.png" />
+                </animation>
+                <animation framecount="14" loop="1" name="Move" pingpong="0" repeatcount="1" repeatto="0" sid="204735799091975" speed="15">
+                    <frame duration="1" hotspotX="0.501044" hotspotY="0.501129" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\1.png" />
+                    <frame duration="1" hotspotX="0.501044" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\2.png" />
+                    <frame duration="1" hotspotX="0.501044" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\5.png" />
+                    <frame duration="1" hotspotX="0.501035" hotspotY="0.501031" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\7.png" />
+                    <frame duration="1" hotspotX="0.501023" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\8.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\9.png" />
+                    <frame duration="1" hotspotX="0.501035" hotspotY="0.501031" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\11.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\12.png" />
+                    <frame duration="1" hotspotX="0.501044" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\13.png" />
+                    <frame duration="1" hotspotX="0.501044" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\14.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rock" sid="204231569380717">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="762041624697974">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="103256662715784" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button" sid="252960900590316">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="811428313870775">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="971290843651967" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\giant-button.png">
+                        <collision-poly>
+                            <point x="0.09375" y="0.125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.890625" y="0.145833" />
+                            <point x="0.796875" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.203125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="takeControlBox2" sid="333252093376664">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="234976011590642" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" original-source="C:\Users\eprhb\Downloads\square2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="buttonbox" sid="488861122644196">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="129638899381578" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\squarebutton.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="exitbox2" sid="636891915593684">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="win" sid="913447441013157" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="367316542293656" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\squarexit2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="debug" sid="900435815979353">
             <plugin id="Text" />
         </object-type>
     </object-folder>
