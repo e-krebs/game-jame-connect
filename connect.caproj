@@ -92,6 +92,9 @@
                 <behavior-type name="BoundToLayout" sid="141897487110618">
                     <behavior id="bound" />
                 </behavior-type>
+                <behavior-type name="Solid" sid="586866687296391">
+                    <behavior id="solid" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614499314113069" speed="5">
@@ -117,6 +120,9 @@
                 </behavior-type>
                 <behavior-type name="BoundToLayout" sid="233234890838669">
                     <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="796495860147864">
+                    <behavior id="solid" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -153,6 +159,9 @@
                 </behavior-type>
                 <behavior-type name="BoundToLayout" sid="796324508671001">
                     <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="132410019460286">
+                    <behavior id="solid" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
