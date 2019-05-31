@@ -740,5 +740,138 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="245653004078808" title="animations" />
+        <event-block sid="185323195797581">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="298317897366230" type="playerBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="141584400942829" type="player">
+                    <param id="0" name="Animation">&quot;Move&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="941629890000842">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="867106543198915" type="sidekick0">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="290182571265678" type="playerBox">
+                            <param id="0" name="Instance variable">iscontrolling</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="599721512232298" type="sidekick0">
+                            <param id="0" name="Animation">&quot;Move&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="914468575629489">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="461488592421202" type="sidekick1">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="325867533984779" type="playerBox">
+                            <param id="0" name="Instance variable">iscontrolling</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="676381986719375" type="sidekick1">
+                            <param id="0" name="Animation">&quot;Move&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="761578626471293">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="586268830006546" type="playerBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="993429425760740" type="player">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="390503421384300">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="363963013002376" type="sidekick0">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="443906199877067" type="sidekick0">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="617573793199404">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="244438146821850" type="sidekick1">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="676893879308621" type="sidekick1">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="870707165818030">
+            <conditions>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="510672917126676" type="sidekick0">
+                    <param id="0" name="Instance variable">iscontrolled</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="548643916297812" type="sidekick0">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="805654468220541">
+            <conditions>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="262711972807510" type="sidekick1">
+                    <param id="0" name="Instance variable">iscontrolled</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="660022863799418" type="sidekick1">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="395260343435573">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="294564734982178" type="playerBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="352388596368730" type="player">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="180358820163309">
+            <conditions>
+                <condition behavior="Platform" id="6" name="On fall" sid="603493834412932" type="playerBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="988567652040121" type="player">
+                    <param id="0" name="Animation">&quot;Fall&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

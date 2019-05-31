@@ -70,13 +70,29 @@
             <animation-folder>
                 <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="527613836137985" speed="5">
                     <frame duration="1" hotspotX="0.501044" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_000.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_001.png" />
+                    <frame duration="1" hotspotX="0.502083" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_001.png" />
                     <frame duration="1" hotspotX="0.501044" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_002.png" />
                     <frame duration="1" hotspotX="0.501044" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_003.png" />
                     <frame duration="1" hotspotX="0.501044" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_004.png" />
                     <frame duration="1" hotspotX="0.501044" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_005.png" />
                     <frame duration="1" hotspotX="0.501044" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_006.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_007.png" />
+                    <frame duration="1" hotspotX="0.502083" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_007.png" />
+                </animation>
+                <animation framecount="8" loop="1" name="Move" pingpong="0" repeatcount="1" repeatto="0" sid="856116341174989" speed="5">
+                    <frame duration="1" hotspotX="0.501057" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\02-Run\2D_SM02_Run_000.png" />
+                    <frame duration="1" hotspotX="0.502101" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\02-Run\2D_SM02_Run_001.png" />
+                    <frame duration="1" hotspotX="0.501053" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\02-Run\2D_SM02_Run_002.png" />
+                    <frame duration="1" hotspotX="0.50211" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\02-Run\2D_SM02_Run_003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\02-Run\2D_SM02_Run_004.png" />
+                    <frame duration="1" hotspotX="0.502101" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\02-Run\2D_SM02_Run_005.png" />
+                    <frame duration="1" hotspotX="0.502083" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\02-Run\2D_SM02_Run_006.png" />
+                    <frame duration="1" hotspotX="0.502092" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\02-Run\2D_SM02_Run_007.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="783331214033143" speed="5">
+                    <frame duration="1" hotspotX="0.501062" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\04-Jump\2D_SM02_JumpUP_000.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Fall" pingpong="0" repeatcount="1" repeatto="0" sid="964903857852513" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\04-Jump\2D_SM02_FallDown_000.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -97,7 +113,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614499314113069" speed="5">
+                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614499314113069" speed="0">
                     <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\1.png" />
                     <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\2.png" />
                     <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\3.png" />
@@ -106,6 +122,16 @@
                     <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\6.png" />
                     <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\7.png" />
                     <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\8.png" />
+                </animation>
+                <animation framecount="8" loop="1" name="Move" pingpong="0" repeatcount="1" repeatto="0" sid="506209195226699" speed="5">
+                    <frame duration="1" hotspotX="0.501027" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="1" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -165,13 +191,21 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="688211045117283" speed="5">
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="688211045117283" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\3.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\4.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\5.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\6.png" />
+                </animation>
+                <animation framecount="6" loop="1" name="Move" pingpong="0" repeatcount="1" repeatto="0" sid="370100760865940" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
                 </animation>
             </animation-folder>
         </object-type>
