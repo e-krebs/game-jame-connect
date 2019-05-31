@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>connect</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>https://github.com/e-krebs/game-jame-connect</author-website>
+    <app-id>tech.krebs</app-id>
+    <unique-id>3hbc8tpmvbczu</unique-id>
+    <saved-with-version>26900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1920</width>
+        <height>1080</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="platform" sid="975488637917524">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="782375182859239">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="520017194023272" speed="0">
+                    <frame duration="1" hotspotX="-0.134529" hotspotY="0.806452" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.806452" />
+                    <frame duration="1" hotspotX="1.73288" hotspotY="0.806452" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player" sid="947540930124412">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="padLimit" sid="615800365321886" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="527613836137985" speed="5">
+                    <frame duration="1" hotspotX="0.501044" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_001.png" />
+                    <frame duration="1" hotspotX="0.501044" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_002.png" />
+                    <frame duration="1" hotspotX="0.501044" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_003.png" />
+                    <frame duration="1" hotspotX="0.501044" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_004.png" />
+                    <frame duration="1" hotspotX="0.501044" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_005.png" />
+                    <frame duration="1" hotspotX="0.501044" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_007.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sidekick0" sid="205073850402194">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="iscontrolled" sid="247855145938946" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="859282284770374">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="141897487110618">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614499314113069" speed="5">
+                    <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\1.png" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\2.png" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\3.png" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\4.png" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\5.png" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\6.png" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\7.png" />
+                    <frame duration="1" hotspotX="0.501027" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_little_monster_game_character\Transparent PNG\8.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="playerBox" sid="657814985814407">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="iscontrolling" sid="683381542956235" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="822214517744974">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="233234890838669">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="310786197097544" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\square1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="150300858120206">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="takeControlBox0" sid="574060502969959">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="576841401878778" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\square0.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Gamepad" sid="947325783112924">
+            <plugin id="gamepad" />
+        </object-type>
+        <object-type name="instructions" sid="637912079080131">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="sidekick1" sid="392456252160987">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="iscontrolled" sid="578583624688854" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="248310088661046">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="796324508671001">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="688211045117283" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\6.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="takeControlBox1" sid="156311961460901">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="299876075093019" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\square1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sign" sid="462421916199522">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="228628763305915" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\signpost.png">
+                        <collision-poly>
+                            <point x="0.133333" y="0.0952381" />
+                            <point x="0.5" y="0" />
+                            <point x="0.866667" y="0.0952381" />
+                            <point x="1" y="0.5" />
+                            <point x="0.633333" y="0.738095" />
+                            <point x="0.5" y="1" />
+                            <point x="0.4" y="0.714286" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="exitbox0" sid="124626518274736">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="595740724311750" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\squarexit.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="exitbox1" sid="510909794781536">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="716733895293756" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\squarexit1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="win" sid="376013322440729">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Demo Level.xml</layout>
+        <layout>WinLayout.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="12" />
+        <global-instance type="Gamepad" uid="14">
+            <properties>
+                <analog-deadzone>25</analog-deadzone>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

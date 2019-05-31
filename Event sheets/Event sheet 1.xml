@@ -1,0 +1,744 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-group description="" sid="448079553427461" title="connecting" />
+        <event-block sid="947179689117301">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="265522854678470" type="playerBox">
+                    <param id="0" name="Object">takeControlBox0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="457103371280626">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="392991382342790" type="sidekick0">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="651922325811555" type="sidekick0">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="265908631208028" type="playerBox">
+                            <param id="0" name="Instance variable">iscontrolling</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="290989507419588">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="776003441932639" type="sidekick1">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="954985114462017" type="sidekick1">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="211804840425099">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="661518174673525" type="playerBox">
+                    <param id="0" name="Object">takeControlBox1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="492162550494781">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="623642046170734" type="sidekick1">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="453601444426629" type="sidekick1">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="411916931264476" type="playerBox">
+                            <param id="0" name="Instance variable">iscontrolling</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="404595582946989">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="657254298617054" type="sidekick0">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="622544787036778" type="sidekick0">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="165964018803949" title="reset" />
+        <event-block any="1" sid="984734894041553">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="675705723940463" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+                <condition id="6" name="On button pressed" sid="580948535128912" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="566708803618495" type="System">
+                    <param id="0" name="Layout">Demo Level</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="658524844261389" title="global" />
+        <event-block sid="375723076565042">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="580996252912085" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="222892694153602" type="player">
+                    <param id="0" name="Object">playerBox</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="734080519109470">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="161616071790936" type="sidekick0">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="450240079821712" type="takeControlBox0">
+                            <param id="0" name="Object">sidekick0</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="725661909945551">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="773264015322468" type="sidekick1">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="976027263826549" type="takeControlBox1">
+                            <param id="0" name="Object">sidekick1</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="330883522661050" title="keyboard" />
+        <event-block sid="347009352836882">
+            <conditions>
+                <condition id="2" name="Key is down" sid="783655650726625" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="952099045781277" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="145059532333240" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="149336445334110" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="201689979230785" type="player">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="256232148072152" type="playerBox">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="549582843629410">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="513916658248404" type="sidekick0">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="201673323017679" type="sidekick0">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="275798162556266" type="sidekick0">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="739785535986296">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="209085906459102" type="sidekick1">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="191062215467028" type="sidekick1">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="610012432895340" type="sidekick1">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="231597525712115">
+            <conditions>
+                <condition id="2" name="Key is down" sid="457250270802079" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="752133794384994" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="822517324044937" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="593970361416628" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="539085175745980" type="player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="523850349868934" type="playerBox">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="190894270224102">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="826543566472595" type="sidekick0">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="809685716695665" type="sidekick0">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="620636851874394" type="sidekick0">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="655344915671391">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="738375979764535" type="sidekick1">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="939585374645151" type="sidekick1">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="823038735220398" type="sidekick1">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="407982715914751">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="902679525066082" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="766498561756263" type="playerBox">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="876660841883106">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="798677559780245" type="sidekick0">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="625804928291121" type="sidekick0">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="940084387785618">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="996718455715555" type="sidekick1">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="408136642943414" type="sidekick1">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="546578873384211">
+            <conditions>
+                <condition id="2" name="Key is down" sid="954051477387902" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="149968131453344" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="540258455125110" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="909055282483475" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="856666890946811">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="841592417579583" type="playerBox">
+                            <param id="0" name="Instance variable">iscontrolling</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="420002420952690" type="playerBox">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="925990146864826" type="player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="258564015954327">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="349090144121702" type="sidekick0">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="642133933597790" type="sidekick0">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="921242115298698" type="sidekick0">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="789110482980270">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="926877282079941" type="sidekick1">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="739988106164812" type="sidekick1">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="444561666517908" type="sidekick1">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="516169088309410">
+            <conditions>
+                <condition id="2" name="Key is down" sid="410987969958602" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="414764799542333" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="846555892069857" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="140758181320906" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="427556444944833">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="777114336684362" type="playerBox">
+                            <param id="0" name="Instance variable">iscontrolling</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="783668443249965" type="playerBox">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="740055999563289" type="player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="450003060196432">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="959177822717971" type="sidekick0">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="724240448181205" type="sidekick0">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="735778499102216" type="sidekick0">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="321190550938087">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="356852829215030" type="sidekick1">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="637355463869745" type="sidekick1">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="197745671659466" type="sidekick1">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="666536658588431" title="gamepad" />
+        <event-block sid="303284575797528">
+            <conditions>
+                <condition id="5" name="Compare axis" sid="966429660635587" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">4</param>
+                    <param id="3" name="Value">player.padLimit</param>
+                </condition>
+                <condition id="5" inverted="1" name="Compare axis" sid="492781204479084" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">1</param>
+                    <param id="2" name="Comparison">2</param>
+                    <param id="3" name="Value">-player.padLimit</param>
+                </condition>
+                <condition id="5" inverted="1" name="Compare axis" sid="559510234070921" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">1</param>
+                    <param id="2" name="Comparison">4</param>
+                    <param id="3" name="Value">player.padLimit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="227688035612620" type="player">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="638330528518975" type="playerBox">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="795049178699562">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="184260935586146" type="sidekick0">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="749167567919077" type="sidekick0">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="939752841839904" type="sidekick0">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="344998346628539">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="875437080233506" type="sidekick1">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="699934998908494" type="sidekick1">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="263757054419636" type="sidekick1">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="267095044664366">
+            <conditions>
+                <condition id="5" name="Compare axis" sid="864576411595893" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">2</param>
+                    <param id="3" name="Value">-player.padLimit</param>
+                </condition>
+                <condition id="5" inverted="1" name="Compare axis" sid="933477093408337" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">1</param>
+                    <param id="2" name="Comparison">2</param>
+                    <param id="3" name="Value">-player.padLimit</param>
+                </condition>
+                <condition id="5" inverted="1" name="Compare axis" sid="802586756260956" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">1</param>
+                    <param id="2" name="Comparison">4</param>
+                    <param id="3" name="Value">player.padLimit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="652078234097076" type="player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="382287643113306" type="playerBox">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="760659717544806">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="771428572006536" type="sidekick0">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="487897122726679" type="sidekick0">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="928274033756014" type="sidekick0">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="367814486099254">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="290753170066351" type="sidekick1">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="213799585164139" type="sidekick1">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="481269076364047" type="sidekick1">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="970751374332843">
+            <conditions>
+                <condition id="6" name="On button pressed" sid="619993470809197" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="931530219273674" type="playerBox">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="489396325339046">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="958735673556577" type="sidekick0">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="773888855943090" type="sidekick0">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="538992508536729">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="726294663202623" type="sidekick1">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="778444958041777" type="sidekick1">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="131982607457257">
+            <conditions>
+                <condition id="5" name="Compare axis" sid="368759290533099" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">1</param>
+                    <param id="2" name="Comparison">2</param>
+                    <param id="3" name="Value">-player.padLimit</param>
+                </condition>
+                <condition id="5" inverted="1" name="Compare axis" sid="221327624253840" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">2</param>
+                    <param id="3" name="Value">-player.padLimit</param>
+                </condition>
+                <condition id="5" inverted="1" name="Compare axis" sid="936145506904178" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">4</param>
+                    <param id="3" name="Value">player.padLimit</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="376593136623654">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="315871241477164" type="playerBox">
+                            <param id="0" name="Instance variable">iscontrolling</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="586418379757113" type="playerBox">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="637100494804128" type="player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="623374211736771">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="154573405288882" type="sidekick0">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="343671434853104" type="sidekick0">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="971816239986885" type="sidekick0">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="357998593010858">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="687398896416206" type="sidekick1">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="621488670100532" type="sidekick1">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="766277889717777" type="sidekick1">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="733523531948801">
+            <conditions>
+                <condition id="5" name="Compare axis" sid="149665975235252" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">1</param>
+                    <param id="2" name="Comparison">4</param>
+                    <param id="3" name="Value">player.padLimit</param>
+                </condition>
+                <condition id="5" inverted="1" name="Compare axis" sid="513433015006816" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">2</param>
+                    <param id="3" name="Value">-player.padLimit</param>
+                </condition>
+                <condition id="5" inverted="1" name="Compare axis" sid="768726355605295" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">4</param>
+                    <param id="3" name="Value">player.padLimit</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="865075142006821">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="552627074845245" type="playerBox">
+                            <param id="0" name="Instance variable">iscontrolling</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="578362532598920" type="playerBox">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="522059774157942" type="player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="476629581303223">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="385152472685594" type="sidekick0">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="724875082882097" type="sidekick0">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="583066331183001" type="sidekick0">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="707815366483389">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="386215112300773" type="sidekick1">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="920659993474197" type="sidekick1">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="445804684291448" type="sidekick1">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="916278742492868" title="wining" />
+        <event-block sid="862930454124873">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="637220925188691" type="sidekick0">
+                    <param id="0" name="Object">exitbox0</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="371707366033093" type="sidekick1">
+                    <param id="0" name="Object">exitbox1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="984811290358845" type="System">
+                    <param id="0" name="Layout">WinLayout</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 2</name>
+    <events>
+        <event-group description="" sid="428077405470061" title="reset2" />
+        <event-block any="1" sid="787218951581116">
+            <conditions>
+                <condition id="1" name="On any key pressed" sid="123130937973567" type="Keyboard" />
+                <condition id="8" name="On any button pressed" sid="759503191508284" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="950703865052520" type="System">
+                    <param id="0" name="Layout">Demo Level</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
