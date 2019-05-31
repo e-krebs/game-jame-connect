@@ -6,7 +6,7 @@
         <event-group description="" sid="448079553427461" title="connecting" />
         <event-block sid="947179689117301">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="265522854678470" type="playerBox">
+                <condition id="1" name="Is overlapping another object" sid="265522854678470" type="playerBox">
                     <param id="0" name="Object">takeControlBox0</param>
                 </condition>
             </conditions>
@@ -46,7 +46,7 @@
         </event-block>
         <event-block sid="211804840425099">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="661518174673525" type="playerBox">
+                <condition id="1" name="Is overlapping another object" sid="661518174673525" type="playerBox">
                     <param id="0" name="Object">takeControlBox1</param>
                 </condition>
             </conditions>
