@@ -25,7 +25,7 @@
                     <param id="0" name="Object">sidekick2</param>
                     <param id="1" name="Image point (optional)">0</param>
                 </action>
-                <action id="0" name="Set text" sid="988405626970426" type="debug">
+                <action disabled="1" id="0" name="Set text" sid="988405626970426" type="debug">
                     <param id="0" name="Text">&quot;exit 0: &quot; &amp; exitbox0.win &amp; &quot;, exit 1: &quot; &amp; exitbox1.win &amp; &quot;, exit 2:&quot; &amp; exitbox2.win</param>
                 </action>
             </actions>
@@ -45,6 +45,72 @@
                     <actions>
                         <action id="-2" name="Go to layout" sid="146889572103279" type="System">
                             <param id="0" name="Layout">WinLayout</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="292290831960839">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="253683222766571" type="sidekick0">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="722492262152034" type="sidekick0">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="847763206171506">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="747639984330858" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="370311863373691" type="sidekick0">
+                            <param id="0" name="Opacity">60</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="460607307130595">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="622479834472792" type="sidekick1">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="659170094320683" type="sidekick1">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="681261739007625">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="677252172018332" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="743964011200976" type="sidekick1">
+                            <param id="0" name="Opacity">60</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="424572954442823">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="630466249668462" type="sidekick2">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="454042770476410" type="sidekick2">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="912876079431338">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="314013037880167" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="610905819919711" type="sidekick2">
+                            <param id="0" name="Opacity">60</param>
                         </action>
                     </actions>
                 </event-block>
@@ -308,7 +374,7 @@
                     </conditions>
                     <actions>
                         <action id="7" name="Set mirrored" sid="644542061773122" type="sidekick2">
-                            <param id="0" name="State">0</param>
+                            <param id="0" name="State">1</param>
                         </action>
                         <action behavior="Platform" id="7" name="Simulate control" sid="693487545880353" type="sidekick2">
                             <param id="0" name="Control">1</param>
@@ -379,7 +445,7 @@
                     </conditions>
                     <actions>
                         <action id="7" name="Set mirrored" sid="408747882038924" type="sidekick2">
-                            <param id="0" name="State">1</param>
+                            <param id="0" name="State">0</param>
                         </action>
                         <action behavior="Platform" id="7" name="Simulate control" sid="476189416581132" type="sidekick2">
                             <param id="0" name="Control">0</param>
@@ -511,7 +577,7 @@
                             <param id="0" name="Control">0</param>
                         </action>
                         <action id="7" name="Set mirrored" sid="567249222650441" type="sidekick2">
-                            <param id="0" name="State">1</param>
+                            <param id="0" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -590,7 +656,7 @@
                             <param id="0" name="Control">1</param>
                         </action>
                         <action id="7" name="Set mirrored" sid="897273098842312" type="sidekick2">
-                            <param id="0" name="State">0</param>
+                            <param id="0" name="State">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -665,7 +731,7 @@
                     </conditions>
                     <actions>
                         <action id="7" name="Set mirrored" sid="816198983460862" type="sidekick2">
-                            <param id="0" name="State">0</param>
+                            <param id="0" name="State">1</param>
                         </action>
                         <action behavior="Platform" id="7" name="Simulate control" sid="304374867407478" type="sidekick2">
                             <param id="0" name="Control">1</param>
@@ -742,7 +808,7 @@
                     </conditions>
                     <actions>
                         <action id="7" name="Set mirrored" sid="954331243952664" type="sidekick2">
-                            <param id="0" name="State">1</param>
+                            <param id="0" name="State">0</param>
                         </action>
                         <action behavior="Platform" id="7" name="Simulate control" sid="839025352939964" type="sidekick2">
                             <param id="0" name="Control">0</param>
@@ -881,7 +947,7 @@
                             <param id="0" name="Control">0</param>
                         </action>
                         <action id="7" name="Set mirrored" sid="425791395643770" type="sidekick2">
-                            <param id="0" name="State">1</param>
+                            <param id="0" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -966,7 +1032,7 @@
                             <param id="0" name="Control">1</param>
                         </action>
                         <action id="7" name="Set mirrored" sid="240765520651937" type="sidekick2">
-                            <param id="0" name="State">0</param>
+                            <param id="0" name="State">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1225,6 +1291,32 @@
             <actions>
                 <action id="4" name="Set animation" sid="988567652040121" type="player">
                     <param id="0" name="Animation">&quot;Fall&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="694086461322543">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="753695592449158" type="sidekick2">
+                            <param id="0" name="Instance variable">iscontrolled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="495258600214924" type="sidekick2">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="878634598116764">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="873268297973600" type="sidekick2" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="155299670552732" type="sidekick2">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>

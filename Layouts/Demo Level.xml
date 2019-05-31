@@ -47,9 +47,65 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="playerBox" uid="11">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <iscontrolling>false</iscontrolling>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>330</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="BoundToLayout">
+                            <properties>
+                                <bound-by>Edge</bound-by>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="ScrollTo">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1056</x>
+                        <y>868</y>
+                        <z>0</z>
+                        <width>32.518035889</width>
+                        <height>62.041503906</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="exitbox2" uid="50">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -147,7 +203,7 @@
                 </instance>
                 <instance type="exitbox1" uid="37">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -172,7 +228,7 @@
                 </instance>
                 <instance type="exitbox0" uid="32">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -513,120 +569,13 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1056</x>
-                        <y>866</y>
+                        <x>1057.577880859</x>
+                        <y>867</y>
                         <z>0</z>
-                        <width>65.026252747</width>
-                        <height>62.989944458</height>
+                        <width>20.885848999</width>
+                        <height>60.758842468</height>
                         <depth>0</depth>
-                        <hotspotX>0.501043856</hotspotX>
-                        <hotspotY>1</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="sidekick0" uid="10">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <iscontrolled>false</iscontrolled>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>330</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="BoundToLayout">
-                            <properties>
-                                <bound-by>Edge</bound-by>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1428</x>
-                        <y>848</y>
-                        <z>0</z>
-                        <width>31.057693481</width>
-                        <height>32.970897675</height>
-                        <depth>0</depth>
-                        <hotspotX>0.50102669</hotspotX>
-                        <hotspotY>0.500967145</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="playerBox" uid="11">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <iscontrolling>false</iscontrolling>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>330</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="BoundToLayout">
-                            <properties>
-                                <bound-by>Edge</bound-by>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="ScrollTo">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1056</x>
-                        <y>866</y>
-                        <z>0</z>
-                        <width>32.518035889</width>
-                        <height>62.041503906</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.545454562</hotspotX>
                         <hotspotY>1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -831,57 +780,6 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.806451619</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="sidekick1" uid="22">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <iscontrolled>false</iscontrolled>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>330</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Enabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="BoundToLayout">
-                            <properties>
-                                <bound-by>Edge</bound-by>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>263</x>
-                        <y>843</y>
-                        <z>0</z>
-                        <width>43.052261353</width>
-                        <height>47.570091248</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.500931084</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1247,57 +1145,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="sidekick2" uid="38">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <iscontrolled>false</iscontrolled>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>330</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="BoundToLayout">
-                            <properties>
-                                <bound-by>Edge</bound-by>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>470</x>
-                        <y>832</y>
-                        <z>0</z>
-                        <width>77.986587524</width>
-                        <height>72.12538147</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501043856</hotspotX>
-                        <hotspotY>0.501128674</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="rock" uid="43">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -1488,6 +1335,159 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="sidekick1" uid="22">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <iscontrolled>false</iscontrolled>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>330</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Enabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="BoundToLayout">
+                            <properties>
+                                <bound-by>Edge</bound-by>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>257.429168701</x>
+                        <y>834.381713867</y>
+                        <z>0</z>
+                        <width>53.007034302</width>
+                        <height>60.016231537</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="sidekick2" uid="38">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <iscontrolled>false</iscontrolled>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>330</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="BoundToLayout">
+                            <properties>
+                                <bound-by>Edge</bound-by>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>471.454528809</x>
+                        <y>833.545410156</y>
+                        <z>0</z>
+                        <width>41.353569031</width>
+                        <height>74.953346252</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="sidekick0" uid="10">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <iscontrolled>false</iscontrolled>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>330</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="BoundToLayout">
+                            <properties>
+                                <bound-by>Edge</bound-by>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1428</x>
+                        <y>848</y>
+                        <z>0</z>
+                        <width>31.057693481</width>
+                        <height>32.970897675</height>
+                        <depth>0</depth>
+                        <hotspotX>0.50102669</hotspotX>
+                        <hotspotY>0.500967145</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

@@ -69,31 +69,31 @@
                 <instance-variable name="padLimit" sid="615800365321886" type="number" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="527613836137985" speed="5">
-                    <frame duration="1" hotspotX="0.501044" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_000.png" />
-                    <frame duration="1" hotspotX="0.502083" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_001.png" />
-                    <frame duration="1" hotspotX="0.501044" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_002.png" />
-                    <frame duration="1" hotspotX="0.501044" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_003.png" />
-                    <frame duration="1" hotspotX="0.501044" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_004.png" />
-                    <frame duration="1" hotspotX="0.501044" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_005.png" />
-                    <frame duration="1" hotspotX="0.501044" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_006.png" />
-                    <frame duration="1" hotspotX="0.502083" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\01-Idle\01-Normal\2D_SM02_Idle_007.png" />
+                <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="527613836137985" speed="5">
+                    <frame duration="1" hotspotX="0.545455" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.545455" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.545455" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.545455" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.545455" hotspotY="1" />
                 </animation>
-                <animation framecount="8" loop="1" name="Move" pingpong="0" repeatcount="1" repeatto="0" sid="856116341174989" speed="5">
-                    <frame duration="1" hotspotX="0.501057" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\02-Run\2D_SM02_Run_000.png" />
-                    <frame duration="1" hotspotX="0.502101" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\02-Run\2D_SM02_Run_001.png" />
-                    <frame duration="1" hotspotX="0.501053" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\02-Run\2D_SM02_Run_002.png" />
-                    <frame duration="1" hotspotX="0.50211" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\02-Run\2D_SM02_Run_003.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\02-Run\2D_SM02_Run_004.png" />
-                    <frame duration="1" hotspotX="0.502101" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\02-Run\2D_SM02_Run_005.png" />
-                    <frame duration="1" hotspotX="0.502083" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\02-Run\2D_SM02_Run_006.png" />
-                    <frame duration="1" hotspotX="0.502092" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\02-Run\2D_SM02_Run_007.png" />
+                <animation framecount="4" loop="1" name="Move" pingpong="0" repeatcount="1" repeatto="0" sid="856116341174989" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
                 </animation>
-                <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="783331214033143" speed="5">
-                    <frame duration="1" hotspotX="0.501062" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\04-Jump\2D_SM02_JumpUP_000.png" />
+                <animation framecount="6" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="783331214033143" speed="15">
+                    <frame duration="1" hotspotX="0.545455" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="1" />
                 </animation>
-                <animation framecount="1" loop="0" name="Fall" pingpong="0" repeatcount="1" repeatto="0" sid="964903857852513" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\Samurai02\04-Jump\2D_SM02_FallDown_000.png" />
+                <animation framecount="3" loop="0" name="Fall" pingpong="0" repeatcount="1" repeatto="0" sid="964903857852513" speed="5">
+                    <frame duration="1" hotspotX="0.53125" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.53125" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.53125" hotspotY="1" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -195,21 +195,23 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="688211045117283" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\1.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\2.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\3.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\4.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\5.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" original-source="C:\Users\eprhb\Downloads\walking_green_monster_sprites\PNG\6.png" />
+                <animation framecount="7" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="688211045117283" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.501832" />
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501832" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="6" loop="1" name="Move" pingpong="0" repeatcount="1" repeatto="0" sid="370100760865940" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500931" />
+                <animation framecount="7" loop="1" name="Move" pingpong="0" repeatcount="1" repeatto="0" sid="370100760865940" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.501832" />
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501832" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -282,37 +284,18 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="14" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="415742452502308" speed="0">
-                    <frame duration="1" hotspotX="0.501044" hotspotY="0.501129" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\1.png" />
-                    <frame duration="1" hotspotX="0.501044" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\2.png" />
-                    <frame duration="1" hotspotX="0.501044" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\3.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\4.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\5.png" />
-                    <frame duration="1" hotspotX="0.501035" hotspotY="0.501031" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\6.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\7.png" />
-                    <frame duration="1" hotspotX="0.501023" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\8.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\9.png" />
-                    <frame duration="1" hotspotX="0.501035" hotspotY="0.501031" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\10.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\11.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\12.png" />
-                    <frame duration="1" hotspotX="0.501044" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\13.png" />
-                    <frame duration="1" hotspotX="0.501044" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\14.png" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="415742452502308" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="14" loop="1" name="Move" pingpong="0" repeatcount="1" repeatto="0" sid="204735799091975" speed="15">
-                    <frame duration="1" hotspotX="0.501044" hotspotY="0.501129" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\1.png" />
-                    <frame duration="1" hotspotX="0.501044" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\2.png" />
-                    <frame duration="1" hotspotX="0.501044" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\3.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\4.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\5.png" />
-                    <frame duration="1" hotspotX="0.501035" hotspotY="0.501031" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\6.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\7.png" />
-                    <frame duration="1" hotspotX="0.501023" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\8.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\9.png" />
-                    <frame duration="1" hotspotX="0.501035" hotspotY="0.501031" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\10.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\11.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\12.png" />
-                    <frame duration="1" hotspotX="0.501044" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\13.png" />
-                    <frame duration="1" hotspotX="0.501044" hotspotY="0.5" original-source="C:\Users\eprhb\Downloads\cruncher_monster_enemy_game_character\PNG\14.png" />
+                <animation framecount="3" loop="1" name="Move" pingpong="0" repeatcount="1" repeatto="0" sid="204735799091975" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.512195" hotspotY="0.508475" />
+                </animation>
+                <animation framecount="3" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="589567348099599" speed="7">
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.509434" />
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
