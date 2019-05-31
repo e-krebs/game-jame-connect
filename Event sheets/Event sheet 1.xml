@@ -295,7 +295,7 @@
         <event-block sid="546578873384211">
             <conditions>
                 <condition id="2" name="Key is down" sid="954051477387902" type="Keyboard">
-                    <param id="0" name="Key">38</param>
+                    <param id="0" name="Key">40</param>
                 </condition>
                 <condition id="2" inverted="1" name="Key is down" sid="149968131453344" type="Keyboard">
                     <param id="0" name="Key">37</param>
@@ -304,7 +304,7 @@
                     <param id="0" name="Key">39</param>
                 </condition>
                 <condition id="2" inverted="1" name="Key is down" sid="909055282483475" type="Keyboard">
-                    <param id="0" name="Key">40</param>
+                    <param id="0" name="Key">38</param>
                 </condition>
             </conditions>
             <actions />
@@ -359,7 +359,7 @@
         <event-block sid="516169088309410">
             <conditions>
                 <condition id="2" name="Key is down" sid="410987969958602" type="Keyboard">
-                    <param id="0" name="Key">40</param>
+                    <param id="0" name="Key">38</param>
                 </condition>
                 <condition id="2" inverted="1" name="Key is down" sid="414764799542333" type="Keyboard">
                     <param id="0" name="Key">37</param>
@@ -368,7 +368,7 @@
                     <param id="0" name="Key">39</param>
                 </condition>
                 <condition id="2" inverted="1" name="Key is down" sid="140758181320906" type="Keyboard">
-                    <param id="0" name="Key">38</param>
+                    <param id="0" name="Key">40</param>
                 </condition>
             </conditions>
             <actions />
@@ -589,8 +589,8 @@
                 <condition id="5" name="Compare axis" sid="368759290533099" type="Gamepad">
                     <param id="0" name="Gamepad">0</param>
                     <param id="1" name="Axis">1</param>
-                    <param id="2" name="Comparison">2</param>
-                    <param id="3" name="Value">-player.padLimit</param>
+                    <param id="2" name="Comparison">4</param>
+                    <param id="3" name="Value">player.padLimit</param>
                 </condition>
                 <condition id="5" inverted="1" name="Compare axis" sid="221327624253840" type="Gamepad">
                     <param id="0" name="Gamepad">0</param>
@@ -659,8 +659,8 @@
                 <condition id="5" name="Compare axis" sid="149665975235252" type="Gamepad">
                     <param id="0" name="Gamepad">0</param>
                     <param id="1" name="Axis">1</param>
-                    <param id="2" name="Comparison">4</param>
-                    <param id="3" name="Value">player.padLimit</param>
+                    <param id="2" name="Comparison">2</param>
+                    <param id="3" name="Value">-player.padLimit</param>
                 </condition>
                 <condition id="5" inverted="1" name="Compare axis" sid="513433015006816" type="Gamepad">
                     <param id="0" name="Gamepad">0</param>

@@ -102,7 +102,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>192</x>
-                        <y>865</y>
+                        <y>873</y>
                         <z>0</z>
                         <width>160</width>
                         <height>96</height>
@@ -182,7 +182,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1504</x>
-                        <y>867</y>
+                        <y>877</y>
                         <z>0</z>
                         <width>128</width>
                         <height>99</height>
@@ -1013,7 +1013,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1536</x>
-                        <y>736</y>
+                        <y>704</y>
                         <z>0</z>
                         <width>59.370349884</width>
                         <height>74.279495239</height>
@@ -1042,7 +1042,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1664</x>
-                        <y>736</y>
+                        <y>704</y>
                         <z>0</z>
                         <width>38.87027359</width>
                         <height>74.279495239</height>
@@ -1071,7 +1071,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1536</x>
-                        <y>650</y>
+                        <y>608</y>
                         <z>0</z>
                         <width>59.370349884</width>
                         <height>74.279495239</height>
@@ -1100,7 +1100,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1664</x>
-                        <y>650</y>
+                        <y>608</y>
                         <z>0</z>
                         <width>38.87027359</width>
                         <height>74.279495239</height>
