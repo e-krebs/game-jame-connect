@@ -221,13 +221,22 @@
                                         <action id="7" name="Set mirrored" sid="895773213480614" type="characterSprite">
                                             <param id="0" name="State">1</param>
                                         </action>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="412024197286345" type="littleSprite">
-                                            <param id="0" name="Control">0</param>
-                                        </action>
-                                        <action id="7" name="Set mirrored" sid="180509885225386" type="littleSprite">
-                                            <param id="0" name="State">1</param>
-                                        </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="511700909774348">
+                                            <conditions>
+                                                <condition behavior="Platform" id="0" name="Is moving" sid="340665093909700" type="characterHitbox" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Platform" id="7" name="Simulate control" sid="412024197286345" type="littleSprite">
+                                                    <param id="0" name="Control">0</param>
+                                                </action>
+                                                <action id="7" name="Set mirrored" sid="180509885225386" type="littleSprite">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="184608104219005">
                                     <conditions>
@@ -240,13 +249,22 @@
                                         <action id="7" name="Set mirrored" sid="740055999563289" type="characterSprite">
                                             <param id="0" name="State">0</param>
                                         </action>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="637355463869745" type="littleSprite">
-                                            <param id="0" name="Control">1</param>
-                                        </action>
-                                        <action id="7" name="Set mirrored" sid="197745671659466" type="littleSprite">
-                                            <param id="0" name="State">0</param>
-                                        </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="976405087375300">
+                                            <conditions>
+                                                <condition behavior="Platform" id="0" name="Is moving" sid="933604047320027" type="characterHitbox" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Platform" id="7" name="Simulate control" sid="637355463869745" type="littleSprite">
+                                                    <param id="0" name="Control">1</param>
+                                                </action>
+                                                <action id="7" name="Set mirrored" sid="197745671659466" type="littleSprite">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -272,13 +290,22 @@
                                         <action id="7" name="Set mirrored" sid="913109200772546" type="characterSprite">
                                             <param id="0" name="State">1</param>
                                         </action>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="724373482377628" type="jumpHitbox">
-                                            <param id="0" name="Control">0</param>
-                                        </action>
-                                        <action id="7" name="Set mirrored" sid="352987553394567" type="jumpSprite">
-                                            <param id="0" name="State">0</param>
-                                        </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="517590693000090">
+                                            <conditions>
+                                                <condition behavior="Platform" id="0" name="Is moving" sid="156934202601552" type="characterHitbox" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Platform" id="7" name="Simulate control" sid="724373482377628" type="jumpHitbox">
+                                                    <param id="0" name="Control">0</param>
+                                                </action>
+                                                <action id="7" name="Set mirrored" sid="352987553394567" type="jumpSprite">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="439410262199783">
                                     <conditions>
@@ -291,13 +318,22 @@
                                         <action id="7" name="Set mirrored" sid="460980136550572" type="characterSprite">
                                             <param id="0" name="State">0</param>
                                         </action>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="861124515223856" type="jumpHitbox">
-                                            <param id="0" name="Control">1</param>
-                                        </action>
-                                        <action id="7" name="Set mirrored" sid="897273098842312" type="jumpSprite">
-                                            <param id="0" name="State">1</param>
-                                        </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="964346270244690">
+                                            <conditions>
+                                                <condition behavior="Platform" id="0" name="Is moving" sid="306326092431409" type="characterHitbox" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Platform" id="7" name="Simulate control" sid="861124515223856" type="jumpHitbox">
+                                                    <param id="0" name="Control">1</param>
+                                                </action>
+                                                <action id="7" name="Set mirrored" sid="897273098842312" type="jumpSprite">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -345,13 +381,22 @@
                                         <action id="7" name="Set mirrored" sid="119559125811886" type="characterSprite">
                                             <param id="0" name="State">0</param>
                                         </action>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="400398863897917" type="littleSprite">
-                                            <param id="0" name="Control">1</param>
-                                        </action>
-                                        <action id="7" name="Set mirrored" sid="404166337756429" type="littleSprite">
-                                            <param id="0" name="State">0</param>
-                                        </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="324917708592944">
+                                            <conditions>
+                                                <condition behavior="Platform" id="0" name="Is moving" sid="962391303550611" type="characterHitbox" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Platform" id="7" name="Simulate control" sid="400398863897917" type="littleSprite">
+                                                    <param id="0" name="Control">1</param>
+                                                </action>
+                                                <action id="7" name="Set mirrored" sid="404166337756429" type="littleSprite">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="703243901339698">
                                     <conditions>
@@ -364,13 +409,22 @@
                                         <action id="7" name="Set mirrored" sid="925990146864826" type="characterSprite">
                                             <param id="0" name="State">1</param>
                                         </action>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="739988106164812" type="littleSprite">
-                                            <param id="0" name="Control">0</param>
-                                        </action>
-                                        <action id="7" name="Set mirrored" sid="444561666517908" type="littleSprite">
-                                            <param id="0" name="State">1</param>
-                                        </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="254623343952228">
+                                            <conditions>
+                                                <condition behavior="Platform" id="0" name="Is moving" sid="180057663674822" type="characterHitbox" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Platform" id="7" name="Simulate control" sid="739988106164812" type="littleSprite">
+                                                    <param id="0" name="Control">0</param>
+                                                </action>
+                                                <action id="7" name="Set mirrored" sid="444561666517908" type="littleSprite">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -396,13 +450,22 @@
                                         <action id="7" name="Set mirrored" sid="331584497338143" type="characterSprite">
                                             <param id="0" name="State">0</param>
                                         </action>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="159603579507690" type="jumpHitbox">
-                                            <param id="0" name="Control">1</param>
-                                        </action>
-                                        <action id="7" name="Set mirrored" sid="637893860215095" type="jumpSprite">
-                                            <param id="0" name="State">1</param>
-                                        </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="129177231936686">
+                                            <conditions>
+                                                <condition behavior="Platform" id="0" name="Is moving" sid="927675387211379" type="characterHitbox" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Platform" id="7" name="Simulate control" sid="159603579507690" type="jumpHitbox">
+                                                    <param id="0" name="Control">1</param>
+                                                </action>
+                                                <action id="7" name="Set mirrored" sid="637893860215095" type="jumpSprite">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="730434592357554">
                                     <conditions>
@@ -415,13 +478,22 @@
                                         <action id="7" name="Set mirrored" sid="783122661318732" type="characterSprite">
                                             <param id="0" name="State">1</param>
                                         </action>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="521518529560199" type="jumpHitbox">
-                                            <param id="0" name="Control">0</param>
-                                        </action>
-                                        <action id="7" name="Set mirrored" sid="567249222650441" type="jumpSprite">
-                                            <param id="0" name="State">0</param>
-                                        </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="951217767639587">
+                                            <conditions>
+                                                <condition behavior="Platform" id="0" name="Is moving" sid="560320723813034" type="characterHitbox" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Platform" id="7" name="Simulate control" sid="521518529560199" type="jumpHitbox">
+                                                    <param id="0" name="Control">0</param>
+                                                </action>
+                                                <action id="7" name="Set mirrored" sid="567249222650441" type="jumpSprite">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -494,6 +566,7 @@
                                 <condition id="-8" name="Is boolean instance variable set" sid="209085906459102" type="littleSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="673894058493947" type="characterHitbox" />
                             </conditions>
                             <actions>
                                 <action id="7" name="Set mirrored" sid="191062215467028" type="littleSprite">
@@ -509,6 +582,7 @@
                                 <condition id="-8" name="Is boolean instance variable set" sid="798818605224589" type="jumpSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="200961372549934" type="characterHitbox" />
                             </conditions>
                             <actions>
                                 <action id="7" name="Set mirrored" sid="644542061773122" type="jumpSprite">
@@ -550,6 +624,7 @@
                                 <condition id="-8" name="Is boolean instance variable set" sid="738375979764535" type="littleSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="470727324036139" type="characterHitbox" />
                             </conditions>
                             <actions>
                                 <action id="7" name="Set mirrored" sid="939585374645151" type="littleSprite">
@@ -565,6 +640,7 @@
                                 <condition id="-8" name="Is boolean instance variable set" sid="932078640485756" type="jumpSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="151775547629529" type="characterHitbox" />
                             </conditions>
                             <actions>
                                 <action id="7" name="Set mirrored" sid="408747882038924" type="jumpSprite">
@@ -846,25 +922,67 @@
         </event-group>
         <event-group description="" sid="599634762424874" title="door - switch">
             <sub-events>
-                <event-block sid="200681442400404">
+                <event-block sid="287944353762126">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="848887287718679" type="door">
+                        <condition id="1" name="Is overlapping another object" sid="425918875145992" type="door">
                             <param id="0" name="Object">characterSprite</param>
                         </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="528600925059230" type="door">
+                        <condition id="-8" name="Is boolean instance variable set" sid="146711910531826" type="door">
                             <param id="0" name="Instance variable">opened</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-43" name="Go to next/previous layout" sid="219513419392043" type="System">
+                        <action id="-16" name="Wait" sid="542107708317058" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-43" name="Go to next/previous layout" sid="683375792066681" type="System">
                             <param id="0" name="Which">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="353660616476406">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="904990054336431" type="door">
+                            <param id="0" name="Instance variable">opened</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="489926238061569" type="switchHitbox">
+                            <param id="0" name="Object">characterHitbox</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="104515509122081" type="switchHitbox">
+                            <param id="0" name="Object">littleSprite</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="916014294753814" type="switchHitbox">
+                            <param id="0" name="Object">jumpHitbox</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="151506075822885" type="switchHitBox2">
+                            <param id="0" name="Object">characterHitbox</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="159047139976995" type="switchHitBox2">
+                            <param id="0" name="Object">littleSprite</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="901177961595256" type="switchHitBox2">
+                            <param id="0" name="Object">jumpHitbox</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="419310598365000" type="doorSwitch">
+                            <param id="0" name="Animation">&quot;Closed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="543820659320594" type="door">
+                            <param id="0" name="Animation">&quot;Closing&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="735705462279271" type="door">
+                            <param id="0" name="Instance variable">opened</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="595549631233625">
                     <conditions>
                         <condition id="1" name="Is overlapping another object" sid="191633544584833" type="switchHitbox">
-                            <param id="0" name="Object">characterSprite</param>
+                            <param id="0" name="Object">characterHitbox</param>
                         </condition>
                         <condition id="1" name="Is overlapping another object" sid="591456431745123" type="switchHitbox">
                             <param id="0" name="Object">littleSprite</param>
@@ -873,7 +991,7 @@
                             <param id="0" name="Object">jumpHitbox</param>
                         </condition>
                         <condition id="1" name="Is overlapping another object" sid="135923267457033" type="switchHitBox2">
-                            <param id="0" name="Object">characterSprite</param>
+                            <param id="0" name="Object">characterHitbox</param>
                         </condition>
                         <condition id="1" name="Is overlapping another object" sid="527035024700798" type="switchHitBox2">
                             <param id="0" name="Object">littleSprite</param>
@@ -909,69 +1027,124 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="353660616476406">
-            <conditions>
-                <condition id="-8" name="Is boolean instance variable set" sid="904990054336431" type="door">
-                    <param id="0" name="Instance variable">opened</param>
-                </condition>
-            </conditions>
-            <actions />
+        <event-group description="" sid="992416463757464" title="spikes">
             <sub-events>
-                <event-block sid="529254173012966">
+                <event-block sid="517276970203889">
                     <conditions>
-                        <condition id="1" inverted="1" name="Is overlapping another object" sid="489926238061569" type="switchHitbox">
-                            <param id="0" name="Object">characterSprite</param>
-                        </condition>
-                        <condition id="1" inverted="1" name="Is overlapping another object" sid="104515509122081" type="switchHitbox">
-                            <param id="0" name="Object">littleSprite</param>
-                        </condition>
-                        <condition id="1" inverted="1" name="Is overlapping another object" sid="916014294753814" type="switchHitbox">
-                            <param id="0" name="Object">jumpSprite</param>
-                        </condition>
-                        <condition id="1" inverted="1" name="Is overlapping another object" sid="151506075822885" type="switchHitBox2">
-                            <param id="0" name="Object">characterSprite</param>
-                        </condition>
-                        <condition id="1" inverted="1" name="Is overlapping another object" sid="159047139976995" type="switchHitBox2">
-                            <param id="0" name="Object">littleSprite</param>
-                        </condition>
-                        <condition id="1" inverted="1" name="Is overlapping another object" sid="901177961595256" type="switchHitBox2">
-                            <param id="0" name="Object">jumpSprite</param>
+                        <condition id="0" name="On collision with another object" sid="234285407432893" type="characterHitbox">
+                            <param id="0" name="Object">spike</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="419310598365000" type="doorSwitch">
+                        <action id="-26" name="Restart layout" sid="217650818842438" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="933426530735333" title="slidingDoor - switch">
+            <sub-events>
+                <event-block any="1" sid="422299827442855">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="177120237709512" type="slidingSwitchHitbox">
+                            <param id="0" name="Object">characterHitbox</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="645214615238717" type="slidingSwitchHitbox">
+                            <param id="0" name="Object">littleSprite</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="695004908688106" type="slidingSwitchHitbox">
+                            <param id="0" name="Object">jumpHitbox</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="708811622106898" type="slidingSwitchHitbox2">
+                            <param id="0" name="Object">characterHitbox</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="589808410208135" type="slidingSwitchHitbox2">
+                            <param id="0" name="Object">littleSprite</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="135721499993952" type="slidingSwitchHitbox2">
+                            <param id="0" name="Object">jumpHitbox</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="483648205255517">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="341563620053647" type="slidingDoor">
+                                    <param id="0" name="Instance variable">isOpened</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="322725522592190" type="slidingDoorSwitch">
+                                    <param id="0" name="Animation">&quot;Opened&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="121509912238201" type="slidingDoor">
+                                    <param id="0" name="Animation">&quot;Opening&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="933098975544207" type="slidingDoor">
+                                    <param id="0" name="Instance variable">isOpened</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="377242636960179">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="626248569964279" type="slidingDoor">
+                            <param id="0" name="Instance variable">isOpened</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="806061340746623" type="slidingSwitchHitbox">
+                            <param id="0" name="Object">characterHitbox</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="532456016057960" type="slidingSwitchHitbox">
+                            <param id="0" name="Object">littleSprite</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="899581500080729" type="slidingSwitchHitbox">
+                            <param id="0" name="Object">jumpHitbox</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="281032621236467" type="slidingSwitchHitbox2">
+                            <param id="0" name="Object">characterHitbox</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="162823414561999" type="slidingSwitchHitbox2">
+                            <param id="0" name="Object">littleSprite</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="479740076666682" type="slidingSwitchHitbox2">
+                            <param id="0" name="Object">jumpHitbox</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="389316602247648" type="slidingDoorSwitch">
                             <param id="0" name="Animation">&quot;Closed&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="543820659320594" type="door">
+                        <action id="4" name="Set animation" sid="391052411215211" type="slidingDoor">
                             <param id="0" name="Animation">&quot;Closing&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="735705462279271" type="door">
-                            <param id="0" name="Instance variable">opened</param>
+                        <action id="-13" name="Set boolean" sid="835513870611124" type="slidingDoor">
+                            <param id="0" name="Instance variable">isOpened</param>
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="287944353762126">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="425918875145992" type="door">
-                    <param id="0" name="Object">characterSprite</param>
-                </condition>
-                <condition id="-8" name="Is boolean instance variable set" sid="146711910531826" type="door">
-                    <param id="0" name="Instance variable">opened</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-16" name="Wait" sid="542107708317058" type="System">
-                    <param id="0" name="Seconds">1.0</param>
-                </action>
-                <action id="-43" name="Go to next/previous layout" sid="683375792066681" type="System">
-                    <param id="0" name="Which">0</param>
-                </action>
-            </actions>
-        </event-block>
+        </event-group>
+        <event-group description="" sid="670048437643296" title="glove">
+            <sub-events>
+                <event-block sid="587355923942452">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="304252366649468" type="glove">
+                            <param id="0" name="Object">characterHitbox</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="983213255287559" type="glove">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
