@@ -400,13 +400,13 @@
                 <animation framecount="1" loop="0" name="Closed" pingpong="0" repeatcount="1" repeatto="0" sid="755811010180824" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorLocked64x96.png" />
                 </animation>
-                <animation framecount="4" loop="0" name="Opening" pingpong="0" repeatcount="1" repeatto="0" sid="914967473764627" speed="5">
+                <animation framecount="4" loop="0" name="Opening" pingpong="0" repeatcount="1" repeatto="0" sid="914967473764627" speed="7">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorLocked64x96.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorOpening1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorOpening2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorOpen64x96.png" />
                 </animation>
-                <animation framecount="4" loop="0" name="Closing" pingpong="0" repeatcount="1" repeatto="0" sid="850709621441477" speed="5">
+                <animation framecount="4" loop="0" name="Closing" pingpong="0" repeatcount="1" repeatto="0" sid="850709621441477" speed="7">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorOpen64x96.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorOpening2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorOpening1.png" />
@@ -452,7 +452,7 @@
         <event-sheet>FinalEvents.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="12" />
+        <global-instance type="Keyboard" uid="83" />
     </global-instances>
     <sounds-folder />
     <music-folder />
