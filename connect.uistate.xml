@@ -11,11 +11,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">_Demo Level</layout>
-        <layout order="2">StartLayout</layout>
+        <layout active="1" order="2">StartLayout</layout>
         <layout order="3">LittleSidekickLayout</layout>
         <layout order="4">JumpSidekickLayout</layout>
         <layout order="5">FinalLayout</layout>
-        <event-sheet active="1" order="1">GlobalEvents</event-sheet>
+        <event-sheet order="1">GlobalEvents</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

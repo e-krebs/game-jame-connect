@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
@@ -329,6 +330,21 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.513514" original-source="C:\Users\eprhb\Downloads\square3.png" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="platformTilemap" sid="650425448164767">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="245544956636765">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\ERIS scifi_platformTiles_32x32.png" />
+            <tiles />
+        </object-type>
+        <object-type name="backgroundTilemap" sid="265741185252000">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\ERIS scifi_platformTiles_32x32.png" />
+            <tiles />
         </object-type>
     </object-folder>
     <families />
