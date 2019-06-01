@@ -17,6 +17,7 @@
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -32,7 +33,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>StartLayout</first-layout>
+    <first-layout>TitleScreen</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -70,6 +71,11 @@
             <instance-variables>
                 <instance-variable name="padLimit" sid="615800365321886" type="number" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="Fade" sid="627502840274452">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="527613836137985" speed="5">
                     <frame duration="1" hotspotX="0.545455" hotspotY="1" />
@@ -560,11 +566,62 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="lvl2PlatformTilemap" sid="548641928167956">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="797903991978445">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\ERIS scifi_platformTiles_32x32.png" />
+            <tiles />
+        </object-type>
+        <object-type name="arrowUp" sid="615635104531852">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="353659669882084" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\ArrowsUp.png">
+                        <collision-poly>
+                            <point x="0.266667" y="0.25" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.733333" y="0.25" />
+                            <point x="0.733333" y="0.75" />
+                            <point x="0.5" y="0.984375" />
+                            <point x="0.283333" y="0.734375" />
+                            <point x="0.266667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="arrowDown" sid="211561496713357">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="376222971989427" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\ArrowsDown.png">
+                        <collision-poly>
+                            <point x="0.266667" y="0.25" />
+                            <point x="0.5" y="0.015625" />
+                            <point x="0.716667" y="0.265625" />
+                            <point x="0.716667" y="0.5" />
+                            <point x="0.733333" y="0.75" />
+                            <point x="0.5" y="0.96875" />
+                            <point x="0.266667" y="0.75" />
+                            <point x="0.283333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="titleText" sid="753138080067809">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>_Demo Level.xml</layout>
         <layout>_WinLayout.xml</layout>
+        <layout>TitleScreen.xml</layout>
         <layout>StartLayout.xml</layout>
         <layout>LittleSidekickLayout.xml</layout>
         <layout>JumpSidekickLayout.xml</layout>
@@ -576,6 +633,7 @@
         <event-sheet>LittleSidekickEvents.xml</event-sheet>
         <event-sheet>JumpSidekickEvents.xml</event-sheet>
         <event-sheet>FinalEvents.xml</event-sheet>
+        <event-sheet>TitleEvents.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="83" />

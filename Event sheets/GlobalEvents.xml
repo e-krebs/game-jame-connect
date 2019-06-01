@@ -932,8 +932,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="755180179194615" type="characterHitbox">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="962691589113307" type="characterSprite" />
                         <action id="-16" name="Wait" sid="542107708317058" type="System">
-                            <param id="0" name="Seconds">1.0</param>
+                            <param id="0" name="Seconds">3</param>
                         </action>
                         <action id="-43" name="Go to next/previous layout" sid="683375792066681" type="System">
                             <param id="0" name="Which">0</param>
@@ -1132,14 +1136,14 @@
         </event-group>
         <event-group description="" sid="670048437643296" title="glove">
             <sub-events>
-                <event-block sid="587355923942452">
+                <event-block sid="490450901129316">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="304252366649468" type="glove">
+                        <condition id="1" name="Is overlapping another object" sid="560689664202414" type="glove">
                             <param id="0" name="Object">characterHitbox</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="983213255287559" type="glove">
+                        <action id="-15" name="Set visible" sid="463322674356699" type="glove">
                             <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>

@@ -15,6 +15,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="3">LittleSidekickLayout</layout>
         <layout order="4">JumpSidekickLayout</layout>
         <layout order="5">FinalLayout</layout>
+        <layout order="6">TitleScreen</layout>
         <event-sheet active="1" order="1">GlobalEvents</event-sheet>
     </open-tabs>
     <properties>
@@ -57,5 +58,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/slidingSwitchHitbox/" />
         <folder expanded="1" path="animation-folder/slidingSwitchHitbox2/" />
         <folder expanded="1" path="animation-folder/glove/" />
+        <folder expanded="1" path="animation-folder/arrowUp/" />
+        <folder expanded="1" path="animation-folder/arrowDown/" />
     </folders-expanded>
 </c2uistate>
