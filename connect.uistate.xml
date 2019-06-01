@@ -14,8 +14,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="2">StartLayout</layout>
         <layout order="3">LittleSidekickLayout</layout>
         <layout order="4">JumpSidekickLayout</layout>
-        <layout active="1" order="5">FinalLayout</layout>
-        <event-sheet order="1">GlobalEvents</event-sheet>
+        <layout order="5">FinalLayout</layout>
+        <event-sheet active="1" order="1">GlobalEvents</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -26,9 +26,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="event-folder/" />
-        <folder expanded="1" path="file-folder/" />
+        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="0" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
