@@ -27,7 +27,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="0" path="event-folder/" />
+        <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
@@ -47,5 +47,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/buttonHitbox/" />
         <folder expanded="1" path="animation-folder/jumpHitbox/" />
         <folder expanded="1" path="animation-folder/inactiveRobot/" />
+        <folder expanded="1" path="animation-folder/doorSwitch/" />
+        <folder expanded="1" path="animation-folder/door/" />
+        <folder expanded="1" path="animation-folder/switchHitbox/" />
+        <folder expanded="1" path="animation-folder/switchHitBox2/" />
     </folders-expanded>
 </c2uistate>

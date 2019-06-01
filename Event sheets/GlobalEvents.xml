@@ -844,5 +844,134 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="599634762424874" title="door - switch">
+            <sub-events>
+                <event-block sid="200681442400404">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="848887287718679" type="door">
+                            <param id="0" name="Object">characterSprite</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="528600925059230" type="door">
+                            <param id="0" name="Instance variable">opened</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-43" name="Go to next/previous layout" sid="219513419392043" type="System">
+                            <param id="0" name="Which">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="595549631233625">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="191633544584833" type="switchHitbox">
+                            <param id="0" name="Object">characterSprite</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="591456431745123" type="switchHitbox">
+                            <param id="0" name="Object">littleSprite</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="107967358083973" type="switchHitbox">
+                            <param id="0" name="Object">jumpHitbox</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="135923267457033" type="switchHitBox2">
+                            <param id="0" name="Object">characterSprite</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="527035024700798" type="switchHitBox2">
+                            <param id="0" name="Object">littleSprite</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="482442755485988" type="switchHitBox2">
+                            <param id="0" name="Object">jumpHitbox</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="263835861232021">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="227054885182279" type="door">
+                                    <param id="0" name="Instance variable">opened</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="688532843920509" type="doorSwitch">
+                                    <param id="0" name="Animation">&quot;Opened&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="341105513691119" type="door">
+                                    <param id="0" name="Animation">&quot;Opening&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="797269039886004" type="door">
+                                    <param id="0" name="Instance variable">opened</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="353660616476406">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="904990054336431" type="door">
+                    <param id="0" name="Instance variable">opened</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="529254173012966">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="489926238061569" type="switchHitbox">
+                            <param id="0" name="Object">characterSprite</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="104515509122081" type="switchHitbox">
+                            <param id="0" name="Object">littleSprite</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="916014294753814" type="switchHitbox">
+                            <param id="0" name="Object">jumpSprite</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="151506075822885" type="switchHitBox2">
+                            <param id="0" name="Object">characterSprite</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="159047139976995" type="switchHitBox2">
+                            <param id="0" name="Object">littleSprite</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="901177961595256" type="switchHitBox2">
+                            <param id="0" name="Object">jumpSprite</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="419310598365000" type="doorSwitch">
+                            <param id="0" name="Animation">&quot;Closed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="543820659320594" type="door">
+                            <param id="0" name="Animation">&quot;Closing&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="735705462279271" type="door">
+                            <param id="0" name="Instance variable">opened</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="287944353762126">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="425918875145992" type="door">
+                    <param id="0" name="Object">characterSprite</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="146711910531826" type="door">
+                    <param id="0" name="Instance variable">opened</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="542107708317058" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-43" name="Go to next/previous layout" sid="683375792066681" type="System">
+                    <param id="0" name="Which">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

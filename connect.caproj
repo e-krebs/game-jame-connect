@@ -31,6 +31,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>StartLayout</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -377,6 +378,56 @@
             </behaviors>
             <texture original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor1.png" />
             <tiles />
+        </object-type>
+        <object-type name="doorSwitch" sid="937528437765102">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Closed" pingpong="0" repeatcount="1" repeatto="0" sid="591987373485834" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\SwitchClose.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Opened" pingpong="0" repeatcount="1" repeatto="0" sid="759335742830880" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\SwitchOpen.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="door" sid="119709357631975">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="opened" sid="838463639568398" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Closed" pingpong="0" repeatcount="1" repeatto="0" sid="755811010180824" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorLocked64x96.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="Opening" pingpong="0" repeatcount="1" repeatto="0" sid="914967473764627" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorLocked64x96.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorOpening1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorOpening2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorOpen64x96.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="Closing" pingpong="0" repeatcount="1" repeatto="0" sid="850709621441477" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorOpen64x96.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorOpening2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorOpening1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorLocked64x96.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="switchHitbox" sid="728514584834456">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="833601099526589" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\boxes\square0.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="switchHitBox2" sid="758582588097735">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="120140822076237" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\boxes\square8.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
