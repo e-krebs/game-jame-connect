@@ -13,7 +13,6 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
-        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
@@ -63,7 +62,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="player" sid="947540930124412">
+        <object-type name="characterSprite" sid="947540930124412">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="padLimit" sid="615800365321886" type="number" />
@@ -97,7 +96,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="playerBox" sid="657814985814407">
+        <object-type name="characterHitbox" sid="657814985814407">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="isconnected" sid="683381542956235" type="boolean" />
@@ -125,13 +124,10 @@
         <object-type name="Keyboard" sid="150300858120206">
             <plugin id="Keyboard" />
         </object-type>
-        <object-type name="Gamepad" sid="947325783112924">
-            <plugin id="gamepad" />
-        </object-type>
         <object-type name="instructions" sid="637912079080131">
             <plugin id="Text" />
         </object-type>
-        <object-type name="sidekick1" sid="392456252160987">
+        <object-type name="littleSprite" sid="392456252160987">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="isconnected" sid="578583624688854" type="boolean" />
@@ -177,7 +173,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="takeControlBox1" sid="156311961460901">
+        <object-type name="littleControlbox" sid="156311961460901">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="299876075093019" speed="5">
@@ -204,7 +200,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="exitbox0" sid="124626518274736">
+        <object-type name="exitHitbox0" sid="124626518274736">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="win" sid="301914884994267" type="boolean" />
@@ -215,7 +211,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="exitbox1" sid="510909794781536">
+        <object-type name="exitHitbox1" sid="510909794781536">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="win" sid="955288036549898" type="boolean" />
@@ -229,7 +225,7 @@
         <object-type name="win" sid="376013322440729">
             <plugin id="Text" />
         </object-type>
-        <object-type name="sidekick2" sid="110638550182007">
+        <object-type name="jumpSprite" sid="110638550182007">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="isconnected" sid="745036239584477" type="boolean" />
@@ -299,7 +295,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="takeControlBox2" sid="333252093376664">
+        <object-type name="jumpControlbox" sid="333252093376664">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="234976011590642" speed="0">
@@ -307,7 +303,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="buttonbox" sid="488861122644196">
+        <object-type name="buttonHitbox" sid="488861122644196">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="129638899381578" speed="5">
@@ -315,7 +311,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="sidekick2box" sid="922935080405087">
+        <object-type name="jumpHitbox" sid="922935080405087">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Platform" sid="136278092490308">
@@ -337,19 +333,22 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Demo Level.xml</layout>
-        <layout>WinLayout.xml</layout>
+        <layout>_Demo Level.xml</layout>
+        <layout>_WinLayout.xml</layout>
+        <layout>StartLayout.xml</layout>
+        <layout>LittleSidekickLayout.xml</layout>
+        <layout>JumpSidekickLayout.xml</layout>
+        <layout>FinalLayout.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>GlobalEvents.xml</event-sheet>
+        <event-sheet>StartEvents.xml</event-sheet>
+        <event-sheet>LittleSidekickEvents.xml</event-sheet>
+        <event-sheet>JumpSidekickEvents.xml</event-sheet>
+        <event-sheet>FinalEvents.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="12" />
-        <global-instance type="Gamepad" uid="14">
-            <properties>
-                <analog-deadzone>25</analog-deadzone>
-            </properties>
-        </global-instance>
     </global-instances>
     <sounds-folder />
     <music-folder />

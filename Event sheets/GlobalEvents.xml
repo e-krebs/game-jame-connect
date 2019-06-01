@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Event sheet 1</name>
+    <name>GlobalEvents</name>
     <events>
         <event-group description="" sid="658524844261389" title="global">
             <sub-events>
@@ -10,14 +10,10 @@
                         <condition id="0" name="On key pressed" sid="675705723940463" type="Keyboard">
                             <param id="0" name="Key">27</param>
                         </condition>
-                        <condition id="6" name="On button pressed" sid="580948535128912" type="Gamepad">
-                            <param id="0" name="Gamepad">0</param>
-                            <param id="1" name="Button">9</param>
-                        </condition>
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="566708803618495" type="System">
-                            <param id="0" name="Layout">Demo Level</param>
+                            <param id="0" name="Layout">_Demo Level</param>
                         </action>
                     </actions>
                 </event-block>
@@ -26,48 +22,48 @@
                         <condition id="-1" name="Every tick" sid="580996252912085" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-4" name="Set position to another object" sid="222892694153602" type="player">
-                            <param id="0" name="Object">playerBox</param>
+                        <action id="-4" name="Set position to another object" sid="222892694153602" type="characterSprite">
+                            <param id="0" name="Object">characterHitbox</param>
                             <param id="1" name="Image point (optional)">0</param>
                         </action>
-                        <action id="-4" name="Set position to another object" sid="976027263826549" type="takeControlBox1">
-                            <param id="0" name="Object">sidekick1</param>
+                        <action id="-4" name="Set position to another object" sid="976027263826549" type="littleControlbox">
+                            <param id="0" name="Object">littleSprite</param>
                             <param id="1" name="Image point (optional)">0</param>
                         </action>
-                        <action id="-4" name="Set position to another object" sid="582480097088799" type="takeControlBox2">
-                            <param id="0" name="Object">sidekick2box</param>
+                        <action id="-4" name="Set position to another object" sid="582480097088799" type="jumpControlbox">
+                            <param id="0" name="Object">jumpHitbox</param>
                             <param id="1" name="Image point (optional)">0</param>
                         </action>
-                        <action id="-4" name="Set position to another object" sid="305426640211409" type="sidekick2">
-                            <param id="0" name="Object">sidekick2box</param>
+                        <action id="-4" name="Set position to another object" sid="305426640211409" type="jumpSprite">
+                            <param id="0" name="Object">jumpHitbox</param>
                             <param id="1" name="Image point (optional)">0</param>
                         </action>
                     </actions>
                     <sub-events>
                         <event-block sid="181597861246122">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="576085453592679" type="exitbox0">
+                                <condition id="-8" name="Is boolean instance variable set" sid="576085453592679" type="exitHitbox0">
                                     <param id="0" name="Instance variable">win</param>
                                 </condition>
-                                <condition id="-8" name="Is boolean instance variable set" sid="894897375681311" type="exitbox1">
+                                <condition id="-8" name="Is boolean instance variable set" sid="894897375681311" type="exitHitbox1">
                                     <param id="0" name="Instance variable">win</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="-2" name="Go to layout" sid="146889572103279" type="System">
-                                    <param id="0" name="Layout">WinLayout</param>
+                                    <param id="0" name="Layout">_WinLayout</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="460607307130595">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="622479834472792" type="sidekick1">
+                                <condition id="-8" name="Is boolean instance variable set" sid="622479834472792" type="littleSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
-                                <condition id="-3" inverted="1" name="Is on-screen" sid="436351124260402" type="sidekick1" />
+                                <condition id="-3" inverted="1" name="Is on-screen" sid="436351124260402" type="littleSprite" />
                             </conditions>
                             <actions>
-                                <action id="-13" name="Set boolean" sid="828433935829705" type="sidekick1">
+                                <action id="-13" name="Set boolean" sid="828433935829705" type="littleSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
@@ -75,13 +71,13 @@
                         </event-block>
                         <event-block sid="424572954442823">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="630466249668462" type="sidekick2">
+                                <condition id="-8" name="Is boolean instance variable set" sid="630466249668462" type="jumpSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
-                                <condition id="-3" inverted="1" name="Is on-screen" sid="404645971877882" type="sidekick2" />
+                                <condition id="-3" inverted="1" name="Is on-screen" sid="404645971877882" type="jumpSprite" />
                             </conditions>
                             <actions>
-                                <action id="-13" name="Set boolean" sid="206702911492473" type="sidekick2">
+                                <action id="-13" name="Set boolean" sid="206702911492473" type="jumpSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
@@ -95,30 +91,30 @@
             <sub-events>
                 <event-block sid="384011625891410">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="435577690255698" type="playerBox">
-                            <param id="0" name="Object">takeControlBox2</param>
+                        <condition id="1" name="Is overlapping another object" sid="435577690255698" type="characterHitbox">
+                            <param id="0" name="Object">jumpControlbox</param>
                         </condition>
-                        <condition id="1" inverted="1" name="Is overlapping another object" sid="901077659073307" type="playerBox">
-                            <param id="0" name="Object">takeControlBox1</param>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="901077659073307" type="characterHitbox">
+                            <param id="0" name="Object">littleControlbox</param>
                         </condition>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="308188987398245" type="sidekick2">
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="308188987398245" type="jumpSprite">
                             <param id="0" name="Instance variable">isconnected</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-13" name="Set boolean" sid="689089850406944" type="sidekick2">
+                        <action id="-13" name="Set boolean" sid="689089850406944" type="jumpSprite">
                             <param id="0" name="Instance variable">isconnected</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="475744540366793" type="sidekick2">
+                        <action id="4" name="Set animation" sid="475744540366793" type="jumpSprite">
                             <param id="0" name="Animation">&quot;Connected&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="969625522445153" type="playerBox">
+                        <action id="-13" name="Set boolean" sid="969625522445153" type="characterHitbox">
                             <param id="0" name="Instance variable">isconnected</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="687796195284731" type="sidekick1">
+                        <action id="-13" name="Set boolean" sid="687796195284731" type="littleSprite">
                             <param id="0" name="Instance variable">isconnected</param>
                             <param id="1" name="Value">0</param>
                         </action>
@@ -126,10 +122,10 @@
                     <sub-events>
                         <event-block sid="264983838536110">
                             <conditions>
-                                <condition behavior="Platform" id="0" name="Is moving" sid="138473518819201" type="playerBox" />
+                                <condition behavior="Platform" id="0" name="Is moving" sid="138473518819201" type="characterHitbox" />
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="181162480405070" type="sidekick2">
+                                <action id="4" name="Set animation" sid="181162480405070" type="jumpSprite">
                                     <param id="0" name="Animation">&quot;Move&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
@@ -140,7 +136,7 @@
                                 <condition id="-22" name="Else" sid="141763338722999" type="System" />
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="625628522415369" type="sidekick2">
+                                <action id="4" name="Set animation" sid="625628522415369" type="jumpSprite">
                                     <param id="0" name="Animation">&quot;Idle&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
@@ -150,30 +146,30 @@
                 </event-block>
                 <event-block sid="211804840425099">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="661518174673525" type="playerBox">
-                            <param id="0" name="Object">takeControlBox1</param>
+                        <condition id="1" name="Is overlapping another object" sid="661518174673525" type="characterHitbox">
+                            <param id="0" name="Object">littleControlbox</param>
                         </condition>
-                        <condition id="1" inverted="1" name="Is overlapping another object" sid="923612172052921" type="playerBox">
-                            <param id="0" name="Object">takeControlBox2</param>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="923612172052921" type="characterHitbox">
+                            <param id="0" name="Object">jumpControlbox</param>
                         </condition>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="623642046170734" type="sidekick1">
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="623642046170734" type="littleSprite">
                             <param id="0" name="Instance variable">isconnected</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-13" name="Set boolean" sid="453601444426629" type="sidekick1">
+                        <action id="-13" name="Set boolean" sid="453601444426629" type="littleSprite">
                             <param id="0" name="Instance variable">isconnected</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="411916931264476" type="playerBox">
+                        <action id="-13" name="Set boolean" sid="411916931264476" type="characterHitbox">
                             <param id="0" name="Instance variable">isconnected</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="214047111703057" type="sidekick2">
+                        <action id="-13" name="Set boolean" sid="214047111703057" type="jumpSprite">
                             <param id="0" name="Instance variable">isconnected</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="4" name="Set animation" sid="368825133481781" type="sidekick1">
+                        <action id="4" name="Set animation" sid="368825133481781" type="littleSprite">
                             <param id="0" name="Animation">&quot;Connected&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -197,7 +193,7 @@
                         <condition id="2" inverted="1" name="Key is down" sid="140758181320906" type="Keyboard">
                             <param id="0" name="Key">40</param>
                         </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="777114336684362" type="playerBox">
+                        <condition id="-8" name="Is boolean instance variable set" sid="777114336684362" type="characterHitbox">
                             <param id="0" name="Instance variable">isconnected</param>
                         </condition>
                     </conditions>
@@ -205,7 +201,7 @@
                     <sub-events>
                         <event-block sid="321190550938087">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="356852829215030" type="sidekick1">
+                                <condition id="-8" name="Is boolean instance variable set" sid="356852829215030" type="littleSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
                             </conditions>
@@ -213,22 +209,22 @@
                             <sub-events>
                                 <event-block sid="649446870236853">
                                     <conditions>
-                                        <condition id="-1" name="Compare X" sid="385473424919786" type="playerBox">
+                                        <condition id="-1" name="Compare X" sid="385473424919786" type="characterHitbox">
                                             <param id="0" name="Comparison">2</param>
-                                            <param id="1" name="X co-ordinate">sidekick1.X</param>
+                                            <param id="1" name="X co-ordinate">littleSprite.X</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="285562547958487" type="playerBox">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="285562547958487" type="characterHitbox">
                                             <param id="0" name="Control">1</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="895773213480614" type="player">
+                                        <action id="7" name="Set mirrored" sid="895773213480614" type="characterSprite">
                                             <param id="0" name="State">1</param>
                                         </action>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="412024197286345" type="sidekick1">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="412024197286345" type="littleSprite">
                                             <param id="0" name="Control">0</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="180509885225386" type="sidekick1">
+                                        <action id="7" name="Set mirrored" sid="180509885225386" type="littleSprite">
                                             <param id="0" name="State">1</param>
                                         </action>
                                     </actions>
@@ -238,16 +234,16 @@
                                         <condition id="-22" name="Else" sid="744463637857633" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="783668443249965" type="playerBox">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="783668443249965" type="characterHitbox">
                                             <param id="0" name="Control">0</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="740055999563289" type="player">
+                                        <action id="7" name="Set mirrored" sid="740055999563289" type="characterSprite">
                                             <param id="0" name="State">0</param>
                                         </action>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="637355463869745" type="sidekick1">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="637355463869745" type="littleSprite">
                                             <param id="0" name="Control">1</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="197745671659466" type="sidekick1">
+                                        <action id="7" name="Set mirrored" sid="197745671659466" type="littleSprite">
                                             <param id="0" name="State">0</param>
                                         </action>
                                     </actions>
@@ -256,7 +252,7 @@
                         </event-block>
                         <event-block sid="114329393192577">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="918047702306603" type="sidekick2">
+                                <condition id="-8" name="Is boolean instance variable set" sid="918047702306603" type="jumpSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
                             </conditions>
@@ -264,22 +260,22 @@
                             <sub-events>
                                 <event-block sid="624964372590977">
                                     <conditions>
-                                        <condition id="-1" name="Compare X" sid="179014013138130" type="playerBox">
+                                        <condition id="-1" name="Compare X" sid="179014013138130" type="characterHitbox">
                                             <param id="0" name="Comparison">2</param>
-                                            <param id="1" name="X co-ordinate">sidekick2box.X</param>
+                                            <param id="1" name="X co-ordinate">jumpHitbox.X</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="697691619958669" type="playerBox">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="697691619958669" type="characterHitbox">
                                             <param id="0" name="Control">1</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="913109200772546" type="player">
+                                        <action id="7" name="Set mirrored" sid="913109200772546" type="characterSprite">
                                             <param id="0" name="State">1</param>
                                         </action>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="724373482377628" type="sidekick2box">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="724373482377628" type="jumpHitbox">
                                             <param id="0" name="Control">0</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="352987553394567" type="sidekick2">
+                                        <action id="7" name="Set mirrored" sid="352987553394567" type="jumpSprite">
                                             <param id="0" name="State">0</param>
                                         </action>
                                     </actions>
@@ -289,16 +285,16 @@
                                         <condition id="-22" name="Else" sid="502608645014418" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="178540530463899" type="playerBox">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="178540530463899" type="characterHitbox">
                                             <param id="0" name="Control">0</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="460980136550572" type="player">
+                                        <action id="7" name="Set mirrored" sid="460980136550572" type="characterSprite">
                                             <param id="0" name="State">0</param>
                                         </action>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="861124515223856" type="sidekick2box">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="861124515223856" type="jumpHitbox">
                                             <param id="0" name="Control">1</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="897273098842312" type="sidekick2">
+                                        <action id="7" name="Set mirrored" sid="897273098842312" type="jumpSprite">
                                             <param id="0" name="State">1</param>
                                         </action>
                                     </actions>
@@ -321,7 +317,7 @@
                         <condition id="2" inverted="1" name="Key is down" sid="909055282483475" type="Keyboard">
                             <param id="0" name="Key">38</param>
                         </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="949500974177726" type="playerBox">
+                        <condition id="-8" name="Is boolean instance variable set" sid="949500974177726" type="characterHitbox">
                             <param id="0" name="Instance variable">isconnected</param>
                         </condition>
                     </conditions>
@@ -329,7 +325,7 @@
                     <sub-events>
                         <event-block sid="789110482980270">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="926877282079941" type="sidekick1">
+                                <condition id="-8" name="Is boolean instance variable set" sid="926877282079941" type="littleSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
                             </conditions>
@@ -337,22 +333,22 @@
                             <sub-events>
                                 <event-block sid="604836000964164">
                                     <conditions>
-                                        <condition id="-1" name="Compare X" sid="323404730867100" type="playerBox">
+                                        <condition id="-1" name="Compare X" sid="323404730867100" type="characterHitbox">
                                             <param id="0" name="Comparison">2</param>
-                                            <param id="1" name="X co-ordinate">sidekick1.X</param>
+                                            <param id="1" name="X co-ordinate">littleSprite.X</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="190231301685057" type="playerBox">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="190231301685057" type="characterHitbox">
                                             <param id="0" name="Control">0</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="119559125811886" type="player">
+                                        <action id="7" name="Set mirrored" sid="119559125811886" type="characterSprite">
                                             <param id="0" name="State">0</param>
                                         </action>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="400398863897917" type="sidekick1">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="400398863897917" type="littleSprite">
                                             <param id="0" name="Control">1</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="404166337756429" type="sidekick1">
+                                        <action id="7" name="Set mirrored" sid="404166337756429" type="littleSprite">
                                             <param id="0" name="State">0</param>
                                         </action>
                                     </actions>
@@ -362,16 +358,16 @@
                                         <condition id="-22" name="Else" sid="804568527251560" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="420002420952690" type="playerBox">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="420002420952690" type="characterHitbox">
                                             <param id="0" name="Control">1</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="925990146864826" type="player">
+                                        <action id="7" name="Set mirrored" sid="925990146864826" type="characterSprite">
                                             <param id="0" name="State">1</param>
                                         </action>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="739988106164812" type="sidekick1">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="739988106164812" type="littleSprite">
                                             <param id="0" name="Control">0</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="444561666517908" type="sidekick1">
+                                        <action id="7" name="Set mirrored" sid="444561666517908" type="littleSprite">
                                             <param id="0" name="State">1</param>
                                         </action>
                                     </actions>
@@ -380,7 +376,7 @@
                         </event-block>
                         <event-block sid="236302515291956">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="929144908549852" type="sidekick2">
+                                <condition id="-8" name="Is boolean instance variable set" sid="929144908549852" type="jumpSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
                             </conditions>
@@ -388,22 +384,22 @@
                             <sub-events>
                                 <event-block sid="541620207067939">
                                     <conditions>
-                                        <condition id="-1" name="Compare X" sid="405876106014953" type="playerBox">
+                                        <condition id="-1" name="Compare X" sid="405876106014953" type="characterHitbox">
                                             <param id="0" name="Comparison">2</param>
-                                            <param id="1" name="X co-ordinate">sidekick2.X</param>
+                                            <param id="1" name="X co-ordinate">jumpSprite.X</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="205683046672399" type="playerBox">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="205683046672399" type="characterHitbox">
                                             <param id="0" name="Control">0</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="331584497338143" type="player">
+                                        <action id="7" name="Set mirrored" sid="331584497338143" type="characterSprite">
                                             <param id="0" name="State">0</param>
                                         </action>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="159603579507690" type="sidekick2box">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="159603579507690" type="jumpHitbox">
                                             <param id="0" name="Control">1</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="637893860215095" type="sidekick2">
+                                        <action id="7" name="Set mirrored" sid="637893860215095" type="jumpSprite">
                                             <param id="0" name="State">1</param>
                                         </action>
                                     </actions>
@@ -413,16 +409,16 @@
                                         <condition id="-22" name="Else" sid="913801962054392" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="121974411356536" type="playerBox">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="121974411356536" type="characterHitbox">
                                             <param id="0" name="Control">1</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="783122661318732" type="player">
+                                        <action id="7" name="Set mirrored" sid="783122661318732" type="characterSprite">
                                             <param id="0" name="State">1</param>
                                         </action>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="521518529560199" type="sidekick2box">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="521518529560199" type="jumpHitbox">
                                             <param id="0" name="Control">0</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="567249222650441" type="sidekick2">
+                                        <action id="7" name="Set mirrored" sid="567249222650441" type="jumpSprite">
                                             <param id="0" name="State">0</param>
                                         </action>
                                     </actions>
@@ -438,31 +434,31 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="766498561756263" type="playerBox">
+                        <action behavior="Platform" id="7" name="Simulate control" sid="766498561756263" type="characterHitbox">
                             <param id="0" name="Control">2</param>
                         </action>
                     </actions>
                     <sub-events>
                         <event-block sid="940084387785618">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="996718455715555" type="sidekick1">
+                                <condition id="-8" name="Is boolean instance variable set" sid="996718455715555" type="littleSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="408136642943414" type="sidekick1">
+                                <action behavior="Platform" id="7" name="Simulate control" sid="408136642943414" type="littleSprite">
                                     <param id="0" name="Control">2</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="867801453907072">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="123231973174289" type="sidekick2">
+                                <condition id="-8" name="Is boolean instance variable set" sid="123231973174289" type="jumpSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="710187477493302" type="sidekick2box">
+                                <action behavior="Platform" id="7" name="Simulate control" sid="710187477493302" type="jumpHitbox">
                                     <param id="0" name="Control">2</param>
                                 </action>
                             </actions>
@@ -485,40 +481,40 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="7" name="Set mirrored" sid="201689979230785" type="player">
+                        <action id="7" name="Set mirrored" sid="201689979230785" type="characterSprite">
                             <param id="0" name="State">1</param>
                         </action>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="256232148072152" type="playerBox">
+                        <action behavior="Platform" id="7" name="Simulate control" sid="256232148072152" type="characterHitbox">
                             <param id="0" name="Control">1</param>
                         </action>
                     </actions>
                     <sub-events>
                         <event-block sid="739785535986296">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="209085906459102" type="sidekick1">
+                                <condition id="-8" name="Is boolean instance variable set" sid="209085906459102" type="littleSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="7" name="Set mirrored" sid="191062215467028" type="sidekick1">
+                                <action id="7" name="Set mirrored" sid="191062215467028" type="littleSprite">
                                     <param id="0" name="State">0</param>
                                 </action>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="610012432895340" type="sidekick1">
+                                <action behavior="Platform" id="7" name="Simulate control" sid="610012432895340" type="littleSprite">
                                     <param id="0" name="Control">1</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="173244586662845">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="798818605224589" type="sidekick2">
+                                <condition id="-8" name="Is boolean instance variable set" sid="798818605224589" type="jumpSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="7" name="Set mirrored" sid="644542061773122" type="sidekick2">
+                                <action id="7" name="Set mirrored" sid="644542061773122" type="jumpSprite">
                                     <param id="0" name="State">1</param>
                                 </action>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="693487545880353" type="sidekick2box">
+                                <action behavior="Platform" id="7" name="Simulate control" sid="693487545880353" type="jumpHitbox">
                                     <param id="0" name="Control">1</param>
                                 </action>
                             </actions>
@@ -541,40 +537,40 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="7" name="Set mirrored" sid="539085175745980" type="player">
+                        <action id="7" name="Set mirrored" sid="539085175745980" type="characterSprite">
                             <param id="0" name="State">0</param>
                         </action>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="523850349868934" type="playerBox">
+                        <action behavior="Platform" id="7" name="Simulate control" sid="523850349868934" type="characterHitbox">
                             <param id="0" name="Control">0</param>
                         </action>
                     </actions>
                     <sub-events>
                         <event-block sid="655344915671391">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="738375979764535" type="sidekick1">
+                                <condition id="-8" name="Is boolean instance variable set" sid="738375979764535" type="littleSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="7" name="Set mirrored" sid="939585374645151" type="sidekick1">
+                                <action id="7" name="Set mirrored" sid="939585374645151" type="littleSprite">
                                     <param id="0" name="State">1</param>
                                 </action>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="823038735220398" type="sidekick1">
+                                <action behavior="Platform" id="7" name="Simulate control" sid="823038735220398" type="littleSprite">
                                     <param id="0" name="Control">0</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="691352006149495">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="932078640485756" type="sidekick2">
+                                <condition id="-8" name="Is boolean instance variable set" sid="932078640485756" type="jumpSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="7" name="Set mirrored" sid="408747882038924" type="sidekick2">
+                                <action id="7" name="Set mirrored" sid="408747882038924" type="jumpSprite">
                                     <param id="0" name="State">0</param>
                                 </action>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="476189416581132" type="sidekick2box">
+                                <action behavior="Platform" id="7" name="Simulate control" sid="476189416581132" type="jumpHitbox">
                                     <param id="0" name="Control">0</param>
                                 </action>
                             </actions>
@@ -587,15 +583,15 @@
             <sub-events>
                 <event-block any="1" sid="803473435559725">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="417516549977796" type="exitbox1">
-                            <param id="0" name="Object">sidekick1</param>
+                        <condition id="1" name="Is overlapping another object" sid="417516549977796" type="exitHitbox1">
+                            <param id="0" name="Object">littleSprite</param>
                         </condition>
-                        <condition id="1" name="Is overlapping another object" sid="999674794092617" type="exitbox1">
-                            <param id="0" name="Object">sidekick2</param>
+                        <condition id="1" name="Is overlapping another object" sid="999674794092617" type="exitHitbox1">
+                            <param id="0" name="Object">jumpSprite</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-13" name="Set boolean" sid="109700159206869" type="exitbox1">
+                        <action id="-13" name="Set boolean" sid="109700159206869" type="exitHitbox1">
                             <param id="0" name="Instance variable">win</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -606,7 +602,7 @@
                         <condition id="-22" name="Else" sid="619115802062424" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-13" name="Set boolean" sid="898824485180283" type="exitbox1">
+                        <action id="-13" name="Set boolean" sid="898824485180283" type="exitHitbox1">
                             <param id="0" name="Instance variable">win</param>
                             <param id="1" name="Value">0</param>
                         </action>
@@ -614,15 +610,15 @@
                 </event-block>
                 <event-block any="1" sid="182623350598707">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="349655003696580" type="exitbox0">
-                            <param id="0" name="Object">sidekick1</param>
+                        <condition id="1" name="Is overlapping another object" sid="349655003696580" type="exitHitbox0">
+                            <param id="0" name="Object">littleSprite</param>
                         </condition>
-                        <condition id="1" name="Is overlapping another object" sid="565093205185398" type="exitbox0">
-                            <param id="0" name="Object">sidekick2</param>
+                        <condition id="1" name="Is overlapping another object" sid="565093205185398" type="exitHitbox0">
+                            <param id="0" name="Object">jumpSprite</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-13" name="Set boolean" sid="630269152408391" type="exitbox0">
+                        <action id="-13" name="Set boolean" sid="630269152408391" type="exitHitbox0">
                             <param id="0" name="Instance variable">win</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -633,7 +629,7 @@
                         <condition id="-22" name="Else" sid="938612279395704" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-13" name="Set boolean" sid="960250055186275" type="exitbox0">
+                        <action id="-13" name="Set boolean" sid="960250055186275" type="exitHitbox0">
                             <param id="0" name="Instance variable">win</param>
                             <param id="1" name="Value">0</param>
                         </action>
@@ -645,11 +641,11 @@
             <sub-events>
                 <event-block sid="630673710095518">
                     <conditions>
-                        <condition behavior="Platform" id="9" name="On landed" sid="778084061947163" type="sidekick2box" />
-                        <condition behavior="Platform" id="0" name="Is moving" sid="560373991205609" type="sidekick2box" />
+                        <condition behavior="Platform" id="9" name="On landed" sid="778084061947163" type="jumpHitbox" />
+                        <condition behavior="Platform" id="0" name="Is moving" sid="560373991205609" type="jumpHitbox" />
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="535839845198197" type="sidekick2">
+                        <action id="4" name="Set animation" sid="535839845198197" type="jumpSprite">
                             <param id="0" name="Animation">&quot;Move&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -657,11 +653,11 @@
                 </event-block>
                 <event-block sid="259849223288751">
                     <conditions>
-                        <condition behavior="Platform" id="9" name="On landed" sid="566419583601301" type="playerBox" />
-                        <condition behavior="Platform" id="0" name="Is moving" sid="991412234737596" type="playerBox" />
+                        <condition behavior="Platform" id="9" name="On landed" sid="566419583601301" type="characterHitbox" />
+                        <condition behavior="Platform" id="0" name="Is moving" sid="991412234737596" type="characterHitbox" />
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="797339838130973" type="player">
+                        <action id="4" name="Set animation" sid="797339838130973" type="characterSprite">
                             <param id="0" name="Animation">&quot;Move&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -669,10 +665,10 @@
                 </event-block>
                 <event-block sid="208021624878757">
                     <conditions>
-                        <condition behavior="Platform" id="7" name="On stopped" sid="777802095967560" type="playerBox" />
+                        <condition behavior="Platform" id="7" name="On stopped" sid="777802095967560" type="characterHitbox" />
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="876186789977442" type="player">
+                        <action id="4" name="Set animation" sid="876186789977442" type="characterSprite">
                             <param id="0" name="Animation">&quot;Default&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -680,12 +676,12 @@
                     <sub-events>
                         <event-block sid="607071705016355">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="234417573023469" type="sidekick1">
+                                <condition id="-8" name="Is boolean instance variable set" sid="234417573023469" type="littleSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="625122863526839" type="sidekick1">
+                                <action id="4" name="Set animation" sid="625122863526839" type="littleSprite">
                                     <param id="0" name="Animation">&quot;Connected&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
@@ -693,12 +689,12 @@
                         </event-block>
                         <event-block sid="812684020921248">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="590500130090222" type="sidekick2">
+                                <condition id="-8" name="Is boolean instance variable set" sid="590500130090222" type="jumpSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="471496632129990" type="sidekick2">
+                                <action id="4" name="Set animation" sid="471496632129990" type="jumpSprite">
                                     <param id="0" name="Animation">&quot;Connected&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
@@ -708,10 +704,10 @@
                 </event-block>
                 <event-block any="1" sid="395260343435573">
                     <conditions>
-                        <condition behavior="Platform" id="5" name="On jump" sid="294564734982178" type="playerBox" />
+                        <condition behavior="Platform" id="5" name="On jump" sid="294564734982178" type="characterHitbox" />
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="352388596368730" type="player">
+                        <action id="4" name="Set animation" sid="352388596368730" type="characterSprite">
                             <param id="0" name="Animation">&quot;Jump&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -719,12 +715,12 @@
                     <sub-events>
                         <event-block sid="405664180310039">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="147501560764166" type="sidekick2">
+                                <condition id="-8" name="Is boolean instance variable set" sid="147501560764166" type="jumpSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="484984412457697" type="sidekick2">
+                                <action id="4" name="Set animation" sid="484984412457697" type="jumpSprite">
                                     <param id="0" name="Animation">&quot;Jump&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
@@ -734,10 +730,10 @@
                 </event-block>
                 <event-block sid="180358820163309">
                     <conditions>
-                        <condition behavior="Platform" id="6" name="On fall" sid="603493834412932" type="playerBox" />
+                        <condition behavior="Platform" id="6" name="On fall" sid="603493834412932" type="characterHitbox" />
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="988567652040121" type="player">
+                        <action id="4" name="Set animation" sid="988567652040121" type="characterSprite">
                             <param id="0" name="Animation">&quot;Fall&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -745,12 +741,12 @@
                     <sub-events>
                         <event-block sid="694086461322543">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="753695592449158" type="sidekick2">
+                                <condition id="-8" name="Is boolean instance variable set" sid="753695592449158" type="jumpSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="495258600214924" type="sidekick2">
+                                <action id="4" name="Set animation" sid="495258600214924" type="jumpSprite">
                                     <param id="0" name="Animation">&quot;Connected&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
@@ -760,10 +756,10 @@
                 </event-block>
                 <event-block any="1" sid="185323195797581">
                     <conditions>
-                        <condition behavior="Platform" id="8" name="On moved" sid="298317897366230" type="playerBox" />
+                        <condition behavior="Platform" id="8" name="On moved" sid="298317897366230" type="characterHitbox" />
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="141584400942829" type="player">
+                        <action id="4" name="Set animation" sid="141584400942829" type="characterSprite">
                             <param id="0" name="Animation">&quot;Move&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -771,12 +767,12 @@
                     <sub-events>
                         <event-block sid="914468575629489">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="461488592421202" type="sidekick1">
+                                <condition id="-8" name="Is boolean instance variable set" sid="461488592421202" type="littleSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="676381986719375" type="sidekick1">
+                                <action id="4" name="Set animation" sid="676381986719375" type="littleSprite">
                                     <param id="0" name="Animation">&quot;Move&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
@@ -784,12 +780,12 @@
                         </event-block>
                         <event-block sid="814303800445638">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="135230851712368" type="sidekick2">
+                                <condition id="-8" name="Is boolean instance variable set" sid="135230851712368" type="jumpSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="551345918231180" type="sidekick2">
+                                <action id="4" name="Set animation" sid="551345918231180" type="jumpSprite">
                                     <param id="0" name="Animation">&quot;Move&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
@@ -799,12 +795,12 @@
                 </event-block>
                 <event-block sid="805654468220541">
                     <conditions>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="262711972807510" type="sidekick1">
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="262711972807510" type="littleSprite">
                             <param id="0" name="Instance variable">isconnected</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="660022863799418" type="sidekick1">
+                        <action id="4" name="Set animation" sid="660022863799418" type="littleSprite">
                             <param id="0" name="Animation">&quot;Idle&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -812,12 +808,12 @@
                 </event-block>
                 <event-block sid="371499191845646">
                     <conditions>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="682320641346569" type="sidekick2">
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="682320641346569" type="jumpSprite">
                             <param id="0" name="Instance variable">isconnected</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="244602570901556" type="sidekick2">
+                        <action id="4" name="Set animation" sid="244602570901556" type="jumpSprite">
                             <param id="0" name="Animation">&quot;Idle&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -829,14 +825,14 @@
             <sub-events>
                 <event-block any="1" sid="532804153222043">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="100155265863861" type="playerBox">
-                            <param id="0" name="Object">buttonbox</param>
+                        <condition id="1" name="Is overlapping another object" sid="100155265863861" type="characterHitbox">
+                            <param id="0" name="Object">buttonHitbox</param>
                         </condition>
-                        <condition id="1" name="Is overlapping another object" sid="647921407745441" type="takeControlBox1">
-                            <param id="0" name="Object">buttonbox</param>
+                        <condition id="1" name="Is overlapping another object" sid="647921407745441" type="littleControlbox">
+                            <param id="0" name="Object">buttonHitbox</param>
                         </condition>
-                        <condition id="1" name="Is overlapping another object" sid="825926322572699" type="takeControlBox2">
-                            <param id="0" name="Object">buttonbox</param>
+                        <condition id="1" name="Is overlapping another object" sid="825926322572699" type="jumpControlbox">
+                            <param id="0" name="Object">buttonHitbox</param>
                         </condition>
                     </conditions>
                     <actions>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Demo Level</name>
+    <name>_Demo Level</name>
     <sid>861702393601511</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>GlobalEvents</event-sheet>
     <size>
         <width>4000</width>
         <height>1080</height>
@@ -47,7 +47,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="playerBox" uid="11">
+                <instance type="characterHitbox" uid="11">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -103,7 +103,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="buttonbox" uid="48">
+                <instance type="buttonHitbox" uid="48">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -125,7 +125,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="takeControlBox2" uid="47">
+                <instance type="jumpControlbox" uid="47">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -176,7 +176,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="exitbox0" uid="32">
+                <instance type="exitHitbox0" uid="32">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -201,7 +201,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="takeControlBox1" uid="23">
+                <instance type="littleControlbox" uid="23">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -484,7 +484,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="player" uid="9">
+                <instance type="characterSprite" uid="9">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1196,7 +1196,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="sidekick1" uid="22">
+                <instance type="littleSprite" uid="22">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1247,7 +1247,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="sidekick2box" uid="52">
+                <instance type="jumpHitbox" uid="52">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1295,7 +1295,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="sidekick2" uid="38">
+                <instance type="jumpSprite" uid="38">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1581,7 +1581,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="exitbox1" uid="37">
+                <instance type="exitHitbox1" uid="37">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>

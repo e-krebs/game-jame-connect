@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Demo Level</layout>
-        <event-sheet active="1" order="1">Event sheet 1</event-sheet>
+        <layout active="1" order="0">_Demo Level</layout>
+        <event-sheet order="1">GlobalEvents</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -29,18 +29,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/platform/" />
-        <folder expanded="1" path="animation-folder/player/" />
-        <folder expanded="1" path="animation-folder/playerBox/" />
-        <folder expanded="1" path="animation-folder/sidekick1/" />
-        <folder expanded="1" path="animation-folder/takeControlBox1/" />
+        <folder expanded="1" path="animation-folder/characterSprite/" />
+        <folder expanded="1" path="animation-folder/characterHitbox/" />
+        <folder expanded="1" path="animation-folder/littleSprite/" />
+        <folder expanded="1" path="animation-folder/littleControlbox/" />
         <folder expanded="1" path="animation-folder/sign/" />
-        <folder expanded="1" path="animation-folder/exitbox0/" />
-        <folder expanded="1" path="animation-folder/exitbox1/" />
-        <folder expanded="1" path="animation-folder/sidekick2/" />
+        <folder expanded="1" path="animation-folder/exitHitbox0/" />
+        <folder expanded="1" path="animation-folder/exitHitbox1/" />
+        <folder expanded="1" path="animation-folder/jumpSprite/" />
         <folder expanded="1" path="animation-folder/rock/" />
         <folder expanded="1" path="animation-folder/button/" />
-        <folder expanded="1" path="animation-folder/takeControlBox2/" />
-        <folder expanded="1" path="animation-folder/buttonbox/" />
-        <folder expanded="1" path="animation-folder/sidekick2box/" />
+        <folder expanded="1" path="animation-folder/jumpControlbox/" />
+        <folder expanded="1" path="animation-folder/buttonHitbox/" />
+        <folder expanded="1" path="animation-folder/jumpHitbox/" />
     </folders-expanded>
 </c2uistate>
