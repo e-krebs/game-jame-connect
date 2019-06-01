@@ -368,6 +368,16 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="slidingDoor" sid="455022530731077">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="678310094649065">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor1.png" />
+            <tiles />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
