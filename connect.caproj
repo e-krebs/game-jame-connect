@@ -162,7 +162,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.501832" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="7" loop="1" name="Move" pingpong="0" repeatcount="1" repeatto="0" sid="370100760865940" speed="10">
+                <animation framecount="7" loop="1" name="Move" pingpong="0" repeatcount="1" repeatto="0" sid="563588883344006" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.502058" hotspotY="0.5" />
@@ -170,6 +170,11 @@
                     <frame duration="1" hotspotX="0.502058" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.501832" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="3" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="659552587943897" speed="7">
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.501683" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50173" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -256,6 +261,16 @@
                     <frame duration="1" hotspotX="0.513514" hotspotY="0.509434" />
                     <frame duration="1" hotspotX="0.511111" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.509804" hotspotY="0.5" />
+                </animation>
+                <animation framecount="8" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="958381777277858" speed="7">
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.512195" hotspotY="0.508475" />
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475" />
                 </animation>
             </animation-folder>
         </object-type>
