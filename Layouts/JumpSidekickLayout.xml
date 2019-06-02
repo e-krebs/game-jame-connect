@@ -895,10 +895,10 @@
                     <behavior-instances>
                         <behavior-instance type="Fade">
                             <properties>
-                                <active-at-start>Yes</active-at-start>
+                                <active-at-start>No</active-at-start>
                                 <fade-in-time>0</fade-in-time>
                                 <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
+                                <fade-out-time>3</fade-out-time>
                                 <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
@@ -907,7 +907,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>2944</x>
-                        <y>672</y>
+                        <y>669</y>
                         <z>0</z>
                         <width>41.353569031</width>
                         <height>74.953346252</height>
@@ -954,8 +954,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2944</x>
-                        <y>672</y>
+                        <x>2946</x>
+                        <y>670</y>
                         <z>0</z>
                         <width>29.791809082</width>
                         <height>71.151855469</height>

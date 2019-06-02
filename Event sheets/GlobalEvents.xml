@@ -28,7 +28,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="460607307130595">
+                        <event-block disabled="1" sid="460607307130595">
                             <conditions>
                                 <condition id="-8" name="Is boolean instance variable set" sid="622479834472792" type="littleSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
@@ -42,7 +42,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="424572954442823">
+                        <event-block disabled="1" sid="424572954442823">
                             <conditions>
                                 <condition id="-8" name="Is boolean instance variable set" sid="630466249668462" type="jumpSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
@@ -58,18 +58,11 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block any="1" sid="984734894041553">
+                <event-block any="1" sid="517276970203889">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="675705723940463" type="Keyboard">
                             <param id="0" name="Key">27</param>
                         </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-26" name="Restart layout" sid="566708803618495" type="System" />
-                    </actions>
-                </event-block>
-                <event-block any="1" sid="517276970203889">
-                    <conditions>
                         <condition id="0" name="On collision with another object" sid="234285407432893" type="characterHitbox">
                             <param id="0" name="Object">spike</param>
                         </condition>
@@ -110,11 +103,7 @@
                             <param id="0" name="Instance variable">isconnected</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="756294594195958" type="characterHitbox">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
                         <event-block sid="642442364566354">
                             <conditions>
@@ -126,6 +115,28 @@
                             <actions>
                                 <action behavior="Platform" id="7" name="Simulate control" sid="598183172592462" type="littleSprite">
                                     <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="846340358465487">
+                            <conditions>
+                                <condition behavior="Platform" id="10" name="Is by wall" sid="656701600835569" type="characterHitbox">
+                                    <param id="0" name="Side">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="183243156845614" type="littleSprite">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="909372053429427">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="685925621004324" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="756294594195958" type="characterHitbox">
+                                    <param id="0" name="Control">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -268,41 +279,6 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="184608104219005">
-                            <conditions>
-                                <condition id="-1" name="Compare X" sid="744463637857633" type="characterHitbox">
-                                    <param id="0" name="Comparison">4</param>
-                                    <param id="1" name="X co-ordinate">littleSprite.X - littleSprite.distance </param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="783668443249965" type="characterHitbox">
-                                    <param id="0" name="Control">0</param>
-                                </action>
-                                <action id="7" name="Set mirrored" sid="740055999563289" type="characterSprite">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                            </actions>
-                            <sub-events>
-                                <event-block sid="976405087375300">
-                                    <conditions>
-                                        <condition id="-8" name="Compare two values" sid="694222467687607" type="System">
-                                            <param id="0" name="First value">characterHitbox.Platform.VectorX</param>
-                                            <param id="1" name="Comparison">1</param>
-                                            <param id="2" name="Second value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="637355463869745" type="littleSprite">
-                                            <param id="0" name="Control">1</param>
-                                        </action>
-                                        <action id="7" name="Set mirrored" sid="197745671659466" type="littleSprite">
-                                            <param id="0" name="State">0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="546578873384211">
@@ -358,38 +334,6 @@
                                         </action>
                                         <action id="7" name="Set mirrored" sid="404166337756429" type="littleSprite">
                                             <param id="0" name="State">0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="703243901339698">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="804568527251560" type="System" />
-                            </conditions>
-                            <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="420002420952690" type="characterHitbox">
-                                    <param id="0" name="Control">1</param>
-                                </action>
-                                <action id="7" name="Set mirrored" sid="925990146864826" type="characterSprite">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                            </actions>
-                            <sub-events>
-                                <event-block sid="254623343952228">
-                                    <conditions>
-                                        <condition id="-8" name="Compare two values" sid="604178141461474" type="System">
-                                            <param id="0" name="First value">characterHitbox.Platform.VectorX</param>
-                                            <param id="1" name="Comparison">1</param>
-                                            <param id="2" name="Second value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="739988106164812" type="littleSprite">
-                                            <param id="0" name="Control">0</param>
-                                        </action>
-                                        <action id="7" name="Set mirrored" sid="444561666517908" type="littleSprite">
-                                            <param id="0" name="State">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
