@@ -767,6 +767,7 @@
         <event-sheet>JumpSidekickEvents.xml</event-sheet>
         <event-sheet>FinalEvents.xml</event-sheet>
         <event-sheet>TitleEvents.xml</event-sheet>
+        <event-sheet>JumpSidekickRight.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="160" />
