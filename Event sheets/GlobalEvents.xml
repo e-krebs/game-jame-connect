@@ -45,6 +45,12 @@
                     </conditions>
                     <actions>
                         <action id="-26" name="Restart layout" sid="217650818842438" type="System" />
+                        <action id="0" name="Play" sid="587151352841048" type="Audio">
+                            <param id="0" name="Audio file">Reset</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="490450901129316">
@@ -54,8 +60,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="463322674356699" type="glove">
-                            <param id="0" name="Visibility">0</param>
+                        <action id="-9" name="Destroy" sid="773836168477887" type="glove" />
+                        <action id="0" name="Play" sid="355440573473065" type="Audio">
+                            <param id="0" name="Audio file">Glove</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -142,6 +152,12 @@
                             <param id="0" name="Instance variable">isconnected</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="0" name="Play" sid="767451576036907" type="Audio">
+                            <param id="0" name="Audio file">Connection</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="264983838536110">
@@ -185,6 +201,12 @@
                         <action id="4" name="Set animation" sid="368825133481781" type="littleSprite">
                             <param id="0" name="Animation">&quot;Connected&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="142974403092400" type="Audio">
+                            <param id="0" name="Audio file">Connection</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -527,6 +549,12 @@
                             <param id="0" name="Animation">&quot;Move&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="415697689711905" type="Audio">
+                            <param id="0" name="Audio file">Footsteps</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;move&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="208021624878757">
@@ -537,6 +565,9 @@
                         <action id="4" name="Set animation" sid="876186789977442" type="characterSprite">
                             <param id="0" name="Animation">&quot;Default&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="6" name="Stop" sid="888107781781005" type="Audio">
+                            <param id="0" name="Tag">&quot;move&quot;</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -605,6 +636,12 @@
                             <param id="0" name="Animation">&quot;Move&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="239781163874861" type="Audio">
+                            <param id="0" name="Audio file">Footsteps</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;move&quot;</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="914468575629489">
@@ -663,41 +700,20 @@
                         </action>
                     </actions>
                 </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="538606930682317" title="rock - button">
-            <sub-events>
-                <event-block any="1" sid="532804153222043">
+                <event-block sid="725892561841312">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="100155265863861" type="characterHitbox">
-                            <param id="0" name="Object">buttonHitbox</param>
-                        </condition>
-                        <condition id="1" name="Is overlapping another object" sid="647921407745441" type="littleControlbox">
-                            <param id="0" name="Object">buttonHitbox</param>
-                        </condition>
-                        <condition id="1" name="Is overlapping another object" sid="825926322572699" type="jumpControlbox">
-                            <param id="0" name="Object">buttonHitbox</param>
-                        </condition>
+                        <condition behavior="Platform" id="5" name="On jump" sid="793012871716804" type="characterHitbox" />
                     </conditions>
                     <actions>
-                        <action id="-16" name="Set opacity" sid="320633918452020" type="rock">
-                            <param id="0" name="Opacity">40</param>
+                        <action id="0" name="Play" sid="985065748886722" type="Audio">
+                            <param id="0" name="Audio file">jumpPlayer</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
-                        <action behavior="Solid" id="0" name="Set enabled" sid="201564961505975" type="rock">
-                            <param id="0" name="State">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="806851353093679">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="203458423371592" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Set opacity" sid="807200066396519" type="rock">
-                            <param id="0" name="Opacity">100</param>
-                        </action>
-                        <action behavior="Solid" id="0" name="Set enabled" sid="111676452325384" type="rock">
-                            <param id="0" name="State">1</param>
+                        <action id="4" name="Set animation" sid="111329258955106" type="characterSprite">
+                            <param id="0" name="Animation">&quot;Jump&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -764,6 +780,12 @@
                             <param id="0" name="Instance variable">opened</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="0" name="Play" sid="445897086633689" type="Audio">
+                            <param id="0" name="Audio file">Door</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="595549631233625">
@@ -807,6 +829,12 @@
                                 <action id="-13" name="Set boolean" sid="797269039886004" type="door">
                                     <param id="0" name="Instance variable">opened</param>
                                     <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="506423033920249" type="Audio">
+                                    <param id="0" name="Audio file">Door</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-5</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -858,6 +886,12 @@
                                     <param id="0" name="Instance variable">isOpened</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
+                                <action id="0" name="Play" sid="658264642691658" type="Audio">
+                                    <param id="0" name="Audio file">SlidingDoor</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-7</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -899,6 +933,12 @@
                             <param id="0" name="Instance variable">isOpened</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="0" name="Play" sid="562728662798405" type="Audio">
+                            <param id="0" name="Audio file">SlidingDoor</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-7</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -932,6 +972,12 @@
                         <action id="-13" name="Set boolean" sid="245984967939913" type="slidingDoorBottom">
                             <param id="0" name="Instance variable">isOpened</param>
                             <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="862894296433354" type="Audio">
+                            <param id="0" name="Audio file">SlidingDoor</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-7</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -967,6 +1013,12 @@
                                 <action id="-13" name="Set boolean" sid="857815641247189" type="slidingDoorBottom">
                                     <param id="0" name="Instance variable">isOpened</param>
                                     <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="628382249841975" type="Audio">
+                                    <param id="0" name="Audio file">SlidingDoor</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-7</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
                         </event-block>

@@ -10,6 +10,7 @@
     <unique-id>3hbc8tpmvbczu</unique-id>
     <saved-with-version>26900</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -255,19 +256,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="rock" sid="204231569380717">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="762041624697974">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="103256662715784" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="button" sid="252960900590316">
             <plugin id="Sprite" />
             <behaviors>
@@ -383,13 +371,13 @@
                 <animation framecount="1" loop="0" name="Closed" pingpong="0" repeatcount="1" repeatto="0" sid="755811010180824" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorLocked64x96.png" />
                 </animation>
-                <animation framecount="4" loop="0" name="Opening" pingpong="0" repeatcount="1" repeatto="0" sid="914967473764627" speed="7">
+                <animation framecount="4" loop="0" name="Opening" pingpong="0" repeatcount="1" repeatto="0" sid="914967473764627" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorLocked64x96.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorOpening1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorOpening2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorOpen64x96.png" />
                 </animation>
-                <animation framecount="4" loop="0" name="Closing" pingpong="0" repeatcount="1" repeatto="0" sid="850709621441477" speed="7">
+                <animation framecount="4" loop="0" name="Closing" pingpong="0" repeatcount="1" repeatto="0" sid="850709621441477" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorOpen64x96.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorOpening2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\DoorOpening1.png" />
@@ -475,12 +463,12 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="3" loop="0" name="Opening" pingpong="0" repeatcount="1" repeatto="0" sid="562757149439777" speed="5">
+                <animation framecount="3" loop="0" name="Opening" pingpong="0" repeatcount="1" repeatto="0" sid="562757149439777" speed="30">
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor1.png" />
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor1Opening.png" />
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor1Open.png" />
                 </animation>
-                <animation framecount="3" loop="0" name="Closing" pingpong="0" repeatcount="1" repeatto="0" sid="364099540689739" speed="5">
+                <animation framecount="3" loop="0" name="Closing" pingpong="0" repeatcount="1" repeatto="0" sid="364099540689739" speed="30">
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor1Open.png" />
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor1Opening.png" />
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor1.png" />
@@ -625,12 +613,12 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="3" loop="0" name="Opening" pingpong="0" repeatcount="1" repeatto="0" sid="568045726005798" speed="5">
+                <animation framecount="3" loop="0" name="Opening" pingpong="0" repeatcount="1" repeatto="0" sid="568045726005798" speed="30">
                     <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor2.png" />
                     <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor2Opening.png" />
                     <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor2Open.png" />
                 </animation>
-                <animation framecount="3" loop="0" name="Closing" pingpong="0" repeatcount="1" repeatto="0" sid="769734376547076" speed="5">
+                <animation framecount="3" loop="0" name="Closing" pingpong="0" repeatcount="1" repeatto="0" sid="769734376547076" speed="30">
                     <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor2Open.png" />
                     <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor2Opening.png" />
                     <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor2.png" />
@@ -868,6 +856,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Audio" sid="128111892986385">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -892,8 +883,34 @@
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="160" />
+        <global-instance type="Audio" uid="43">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="Background.ogg" />
+        <file name="Win1.ogg" />
+        <file name="Titlescreen.ogg" />
+        <file name="Reset.ogg" />
+        <file name="Glove.ogg" />
+        <file name="Footsteps.ogg" />
+        <file name="Connection.ogg" />
+        <file name="Door.ogg" />
+        <file name="SlidingDoor.ogg" />
+        <file name="Chains.ogg" />
+        <file name="jumpPlayer.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">

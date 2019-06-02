@@ -598,7 +598,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1088</x>
-                        <y>504</y>
+                        <y>544</y>
                         <z>0</z>
                         <width>32</width>
                         <height>160</height>
@@ -833,7 +833,7 @@
                         <opacity>1</opacity>
                     </world>
                     <tilemap-data>
-                        <width>162</width>
+                        <width>144</width>
                         <height>23</height>
                         <max-width>162</max-width>
                         <max-height>23</max-height>

@@ -120,6 +120,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="969738659597749" type="Audio">
+                            <param id="0" name="Audio file">Chains</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;chains&quot;</param>
+                        </action>
                         <action id="4" name="Set animation" sid="216951260658804" type="movingPlatform">
                             <param id="0" name="Animation">&quot;MovingDown&quot;</param>
                             <param id="1" name="From">1</param>
@@ -130,6 +136,9 @@
                         <action id="-13" name="Set boolean" sid="617914833196047" type="movingPlatform">
                             <param id="0" name="Instance variable">isDown</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="6" name="Stop" sid="393066246428596" type="Audio">
+                            <param id="0" name="Tag">&quot;chains&quot;</param>
                         </action>
                     </actions>
                 </event-block>
