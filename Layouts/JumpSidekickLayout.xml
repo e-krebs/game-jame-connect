@@ -352,7 +352,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spike" uid="126">
+                <instance type="spike" uid="83">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -381,7 +381,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spike" uid="127">
+                <instance type="spike" uid="114">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -410,7 +410,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spike" uid="128">
+                <instance type="spike" uid="115">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -468,7 +468,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spike" uid="130">
+                <instance type="spike" uid="116">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -555,7 +555,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SlidingSwitchBottomHitbox" uid="125">
+                <instance type="SlidingSwitchBottomHitbox" uid="117">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -577,7 +577,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="slidingDoorBottom" uid="123">
+                <instance type="slidingDoorBottom" uid="121">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -609,7 +609,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="slidingDoorBottomSwitch" uid="124">
+                <instance type="slidingDoorBottomSwitch" uid="142">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -801,7 +801,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="lvl2PlatformTilemap" uid="114">
+                <instance type="lvl2PlatformTilemap" uid="143">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <tile-width>32</tile-width>
@@ -881,7 +881,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="jumpSprite" uid="142">
+                <instance type="jumpSprite" uid="154">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -907,7 +907,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="jumpHitbox" uid="143">
+                <instance type="jumpHitbox" uid="155">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -955,7 +955,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="littleControlbox" uid="121">
+                <instance type="littleControlbox" uid="156">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -977,7 +977,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="characterHitbox" uid="116">
+                <instance type="characterHitbox" uid="157">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1033,7 +1033,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="characterSprite" uid="115">
+                <instance type="characterSprite" uid="158">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1069,7 +1069,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="littleSprite" uid="117">
+                <instance type="littleSprite" uid="159">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

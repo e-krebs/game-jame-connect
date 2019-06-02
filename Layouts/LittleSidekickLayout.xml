@@ -2,7 +2,7 @@
 <c2layout>
     <name>LittleSidekickLayout</name>
     <sid>648570085359813</sid>
-    <event-sheet>LittleSidekickEvents</event-sheet>
+    <event-sheet>GlobalEvents</event-sheet>
     <size>
         <width>5184</width>
         <height>736</height>

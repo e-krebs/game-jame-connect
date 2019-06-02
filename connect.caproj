@@ -749,6 +749,16 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="lvl3platformTilemap" sid="910373583686439">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="301351106781601">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\ERIS scifi_platformTiles_32x32.png" />
+            <tiles />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -762,12 +772,11 @@
     </layout-folder>
     <event-folder>
         <event-sheet>GlobalEvents.xml</event-sheet>
-        <event-sheet>StartEvents.xml</event-sheet>
-        <event-sheet>LittleSidekickEvents.xml</event-sheet>
         <event-sheet>JumpSidekickEvents.xml</event-sheet>
         <event-sheet>FinalEvents.xml</event-sheet>
         <event-sheet>TitleEvents.xml</event-sheet>
         <event-sheet>JumpSidekickRight.xml</event-sheet>
+        <event-sheet>JumpSidekickLeft.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="160" />

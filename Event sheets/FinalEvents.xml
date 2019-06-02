@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>FinalEvents</name>
     <events>
+        <include>JumpSidekickLeft</include>
         <include>GlobalEvents</include>
     </events>
 </c2eventsheet>
