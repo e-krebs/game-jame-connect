@@ -715,8 +715,8 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Platform" id="11" name="Set enabled" sid="755180179194615" type="characterHitbox">
-                            <param id="0" name="State">0</param>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="755180179194615" type="characterHitbox">
+                            <param id="0" name="Input">1</param>
                         </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="962691589113307" type="characterSprite" />
                         <action id="-16" name="Wait" sid="542107708317058" type="System">

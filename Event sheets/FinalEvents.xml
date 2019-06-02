@@ -23,8 +23,8 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Platform" id="11" name="Set enabled" sid="238761460714843" type="jumpHitbox">
-                            <param id="0" name="State">0</param>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="238761460714843" type="jumpHitbox">
+                            <param id="0" name="Input">0</param>
                         </action>
                         <action id="-9" name="Destroy" sid="298900361487073" type="jumpHitbox" />
                         <action id="-9" name="Destroy" sid="759950257382820" type="jumpControlbox" />
@@ -39,8 +39,8 @@
                         <condition id="-22" name="Else" sid="836238507488283" type="System" />
                     </conditions>
                     <actions>
-                        <action behavior="Platform" id="11" name="Set enabled" sid="675411090583621" type="jumpHitbox">
-                            <param id="0" name="State">0</param>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="675411090583621" type="jumpHitbox">
+                            <param id="0" name="Input">0</param>
                         </action>
                         <action id="-9" name="Destroy" sid="261921843706132" type="jumpHitbox" />
                         <action id="-9" name="Destroy" sid="392209254755777" type="jumpControlbox" />
@@ -71,8 +71,8 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Platform" id="11" name="Set enabled" sid="999564645230499" type="littleSprite">
-                            <param id="0" name="State">0</param>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="999564645230499" type="littleSprite">
+                            <param id="0" name="Input">0</param>
                         </action>
                         <action id="-9" name="Destroy" sid="850979478006524" type="littleControlbox" />
                         <action behavior="Fade" id="1" name="Start fade" sid="622102143288114" type="littleSprite" />
@@ -86,8 +86,8 @@
                         <condition id="-22" name="Else" sid="231785378717564" type="System" />
                     </conditions>
                     <actions>
-                        <action behavior="Platform" id="11" name="Set enabled" sid="485973939896385" type="littleSprite">
-                            <param id="0" name="State">0</param>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="485973939896385" type="littleSprite">
+                            <param id="0" name="Input">0</param>
                         </action>
                         <action id="-9" name="Destroy" sid="973447768661856" type="littleControlbox" />
                         <action behavior="Fade" id="1" name="Start fade" sid="332676318187193" type="littleSprite" />
