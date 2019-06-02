@@ -31,7 +31,7 @@
             <instances>
                 <instance type="titleText" uid="122">
                     <properties>
-                        <text>Electronic Sheeps</text>
+                        <text>Electric Sheeps</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Roboto Lt,-96,300,0</font>
                         <color>0,0,0</color>

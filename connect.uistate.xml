@@ -11,9 +11,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">_Demo Level</layout>
-        <layout active="1" order="2">JumpSidekickLayout</layout>
+        <layout order="2">JumpSidekickLayout</layout>
         <layout order="3">FinalLayout</layout>
-        <layout order="4">TitleScreen</layout>
+        <layout active="1" order="4">TitleScreen</layout>
         <event-sheet order="1">GlobalEvents</event-sheet>
     </open-tabs>
     <properties>
@@ -61,5 +61,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/slidingDoorBottom/" />
         <folder expanded="1" path="animation-folder/slidingDoorBottomSwitch/" />
         <folder expanded="1" path="animation-folder/SlidingSwitchBottomHitbox/" />
+        <folder expanded="1" path="animation-folder/BGbrokenLS0/" />
+        <folder expanded="1" path="animation-folder/BGbrokenJS0/" />
+        <folder expanded="1" path="animation-folder/ISC/" />
     </folders-expanded>
 </c2uistate>
