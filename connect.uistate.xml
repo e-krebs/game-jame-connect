@@ -11,12 +11,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">FinalLayout</layout>
-        <layout order="4">JumpSidekickLayout</layout>
         <event-sheet order="1">GlobalEvents</event-sheet>
-        <event-sheet order="3">JumpSidekickLeft</event-sheet>
-        <event-sheet active="1" order="2">JumpSidekickRight</event-sheet>
-        <event-sheet order="5">JumpSidekickEvents</event-sheet>
-        <event-sheet order="6">FinalEvents</event-sheet>
+        <event-sheet active="1" order="2">JumpSidekickLeft</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

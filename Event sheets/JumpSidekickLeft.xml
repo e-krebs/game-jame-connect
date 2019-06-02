@@ -89,7 +89,7 @@
                             <param id="0" name="Control">0</param>
                         </action>
                         <action id="7" name="Set mirrored" sid="120630373437465" type="characterSprite">
-                            <param id="0" name="State">1</param>
+                            <param id="0" name="State">0</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -106,7 +106,7 @@
                                     <param id="0" name="Control">1</param>
                                 </action>
                                 <action id="7" name="Set mirrored" sid="519089960714057" type="jumpSprite">
-                                    <param id="0" name="State">0</param>
+                                    <param id="0" name="State">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -150,7 +150,7 @@
                             <param id="0" name="Control">1</param>
                         </action>
                         <action id="7" name="Set mirrored" sid="322888641959145" type="characterSprite">
-                            <param id="0" name="State">0</param>
+                            <param id="0" name="State">1</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -167,7 +167,7 @@
                                     <param id="0" name="Control">0</param>
                                 </action>
                                 <action id="7" name="Set mirrored" sid="360332051909081" type="jumpSprite">
-                                    <param id="0" name="State">1</param>
+                                    <param id="0" name="State">0</param>
                                 </action>
                             </actions>
                         </event-block>
