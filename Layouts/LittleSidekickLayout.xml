@@ -677,7 +677,7 @@
                         <opacity>1</opacity>
                     </world>
                     <tilemap-data>
-                        <width>162</width>
+                        <width>190</width>
                         <height>23</height>
                         <max-width>190</max-width>
                         <max-height>23</max-height>
@@ -1099,6 +1099,8 @@
                     </properties>
                     <instance-variables>
                         <padLimit>70</padLimit>
+                        <littleDestroyed>false</littleDestroyed>
+                        <jumpDestroyed>false</jumpDestroyed>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Fade">

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>connect</name>
+    <name>Electric Sheep</name>
     <description></description>
     <version>1.0.0.0</version>
     <author></author>
@@ -70,6 +70,8 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="padLimit" sid="615800365321886" type="number" />
+                <instance-variable name="littleDestroyed" sid="137738905509931" type="boolean" />
+                <instance-variable name="jumpDestroyed" sid="877606671579755" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Fade" sid="627502840274452">
@@ -212,9 +214,6 @@
                     </frame>
                 </animation>
             </animation-folder>
-        </object-type>
-        <object-type name="win" sid="376013322440729">
-            <plugin id="Text" />
         </object-type>
         <object-type name="jumpSprite" sid="110638550182007">
             <plugin id="Sprite" />
@@ -601,9 +600,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="titleText" sid="753138080067809">
-            <plugin id="Text" />
-        </object-type>
         <object-type name="slidingDoorBottom" sid="524133867202151">
             <plugin id="Sprite" />
             <instance-variables>
@@ -804,23 +800,95 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="TitleScreen" sid="232634193899143">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="508312415546424" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\TitleScreen.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.999219" y="0.0013587" />
+                            <point x="0.999219" y="0.998641" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="press" sid="297362884029979">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="151652386748602" speed="2">
+                    <frame duration="1" hotspotX="0.501475" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\Press Esc to start.png">
+                        <collision-poly>
+                            <point x="0.0058997" y="0.0625" />
+                            <point x="0.498525" y="0.90625" />
+                            <point x="0.976401" y="0.25" />
+                            <point x="0.843658" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501475" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Win1Screen" sid="935988141564511">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="244637079814369" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\EndScreenPlayer.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Win2Screen" sid="769537758303880">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="560674633454052" speed="1">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\EndScreenSheeps0.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\EndScreenSheeps1.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\EndScreenSheeps2.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\EndScreenSheeps3.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\EndScreenSheeps4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CreditsScreen" sid="301316634753677">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="819025816305031" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\Credits.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.999219" y="0.0013587" />
+                            <point x="0.999219" y="0.998641" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>_WinLayout.xml</layout>
         <layout>TitleScreen.xml</layout>
         <layout>StartLayout.xml</layout>
         <layout>LittleSidekickLayout.xml</layout>
         <layout>JumpSidekickLayout.xml</layout>
         <layout>FinalLayout.xml</layout>
+        <layout>Win1Layout.xml</layout>
+        <layout>Win2Layout.xml</layout>
+        <layout>CreditsLayout.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>GlobalEvents.xml</event-sheet>
         <event-sheet>JumpSidekickEvents.xml</event-sheet>
         <event-sheet>FinalEvents.xml</event-sheet>
-        <event-sheet>TitleEvents.xml</event-sheet>
         <event-sheet>JumpSidekickRight.xml</event-sheet>
         <event-sheet>JumpSidekickLeft.xml</event-sheet>
+        <event-sheet>TitleEvents.xml</event-sheet>
+        <event-sheet>WinEventSheet.xml</event-sheet>
+        <event-sheet>CreditsLayout.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="160" />

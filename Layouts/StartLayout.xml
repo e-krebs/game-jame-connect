@@ -409,6 +409,8 @@
                     </properties>
                     <instance-variables>
                         <padLimit>70</padLimit>
+                        <littleDestroyed>false</littleDestroyed>
+                        <jumpDestroyed>false</jumpDestroyed>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Fade">

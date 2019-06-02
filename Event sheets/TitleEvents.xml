@@ -3,14 +3,14 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>TitleEvents</name>
     <events>
-        <event-block sid="281631287094215">
+        <event-block sid="467399988364415">
             <conditions>
-                <condition id="0" name="On key pressed" sid="690842011761615" type="Keyboard">
+                <condition id="0" name="On key pressed" sid="165758000193574" type="Keyboard">
                     <param id="0" name="Key">27</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-43" name="Go to next/previous layout" sid="556927733237362" type="System">
+                <action id="-43" name="Go to next/previous layout" sid="789858541471334" type="System">
                     <param id="0" name="Which">0</param>
                 </action>
             </actions>
