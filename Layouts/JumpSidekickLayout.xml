@@ -833,7 +833,7 @@
                         <opacity>1</opacity>
                     </world>
                     <tilemap-data>
-                        <width>144</width>
+                        <width>162</width>
                         <height>23</height>
                         <max-width>162</max-width>
                         <max-height>23</max-height>
@@ -892,6 +892,17 @@
                         <isconnected>false</isconnected>
                         <distance>130</distance>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1103,6 +1114,15 @@
                         <behavior-instance type="Solid">
                             <properties>
                                 <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>3</fade-out-time>
+                                <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>

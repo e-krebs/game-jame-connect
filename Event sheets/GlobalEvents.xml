@@ -5,16 +5,6 @@
     <events>
         <event-group description="" sid="658524844261389" title="global">
             <sub-events>
-                <event-block any="1" sid="984734894041553">
-                    <conditions>
-                        <condition id="0" name="On key pressed" sid="675705723940463" type="Keyboard">
-                            <param id="0" name="Key">27</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-26" name="Restart layout" sid="566708803618495" type="System" />
-                    </actions>
-                </event-block>
                 <event-block sid="375723076565042">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="580996252912085" type="System" />
@@ -38,21 +28,6 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="181597861246122">
-                            <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="576085453592679" type="exitHitbox0">
-                                    <param id="0" name="Instance variable">win</param>
-                                </condition>
-                                <condition id="-8" name="Is boolean instance variable set" sid="894897375681311" type="exitHitbox1">
-                                    <param id="0" name="Instance variable">win</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-2" name="Go to layout" sid="146889572103279" type="System">
-                                    <param id="0" name="Layout">_WinLayout</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block sid="460607307130595">
                             <conditions>
                                 <condition id="-8" name="Is boolean instance variable set" sid="622479834472792" type="littleSprite">
@@ -82,6 +57,44 @@
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block any="1" sid="984734894041553">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="675705723940463" type="Keyboard">
+                            <param id="0" name="Key">27</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="566708803618495" type="System" />
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="517276970203889">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="234285407432893" type="characterHitbox">
+                            <param id="0" name="Object">spike</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="395262095595311" type="littleSprite">
+                            <param id="0" name="Object">spike</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="350448984464918" type="jumpHitbox">
+                            <param id="0" name="Object">spike</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="217650818842438" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="490450901129316">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="560689664202414" type="glove">
+                            <param id="0" name="Object">characterHitbox</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="463322674356699" type="glove">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
@@ -556,64 +569,6 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="916278742492868" title="wining">
-            <sub-events>
-                <event-block any="1" sid="803473435559725">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="417516549977796" type="exitHitbox1">
-                            <param id="0" name="Object">littleSprite</param>
-                        </condition>
-                        <condition id="1" name="Is overlapping another object" sid="999674794092617" type="exitHitbox1">
-                            <param id="0" name="Object">jumpSprite</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-13" name="Set boolean" sid="109700159206869" type="exitHitbox1">
-                            <param id="0" name="Instance variable">win</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="511657728463495">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="619115802062424" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-13" name="Set boolean" sid="898824485180283" type="exitHitbox1">
-                            <param id="0" name="Instance variable">win</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block any="1" sid="182623350598707">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="349655003696580" type="exitHitbox0">
-                            <param id="0" name="Object">littleSprite</param>
-                        </condition>
-                        <condition id="1" name="Is overlapping another object" sid="565093205185398" type="exitHitbox0">
-                            <param id="0" name="Object">jumpSprite</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-13" name="Set boolean" sid="630269152408391" type="exitHitbox0">
-                            <param id="0" name="Instance variable">win</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="707956820227613">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="938612279395704" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-13" name="Set boolean" sid="960250055186275" type="exitHitbox0">
-                            <param id="0" name="Instance variable">win</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
         <event-group description="" sid="245653004078808" title="animations">
             <sub-events>
                 <event-block sid="630673710095518">
@@ -932,26 +887,6 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="992416463757464" title="spikes">
-            <sub-events>
-                <event-block any="1" sid="517276970203889">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="234285407432893" type="characterHitbox">
-                            <param id="0" name="Object">spike</param>
-                        </condition>
-                        <condition id="0" name="On collision with another object" sid="395262095595311" type="littleSprite">
-                            <param id="0" name="Object">spike</param>
-                        </condition>
-                        <condition id="0" name="On collision with another object" sid="350448984464918" type="jumpHitbox">
-                            <param id="0" name="Object">spike</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-26" name="Restart layout" sid="217650818842438" type="System" />
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
         <event-group description="" sid="933426530735333" title="slidingDoor - switch">
             <sub-events>
                 <event-block any="1" sid="422299827442855">
@@ -1036,22 +971,6 @@
                         <action id="-13" name="Set boolean" sid="835513870611124" type="slidingDoor">
                             <param id="0" name="Instance variable">isOpened</param>
                             <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="670048437643296" title="glove">
-            <sub-events>
-                <event-block sid="490450901129316">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="560689664202414" type="glove">
-                            <param id="0" name="Object">characterHitbox</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-15" name="Set visible" sid="463322674356699" type="glove">
-                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>

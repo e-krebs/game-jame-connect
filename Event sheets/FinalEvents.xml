@@ -5,5 +5,76 @@
     <events>
         <include>JumpSidekickLeft</include>
         <include>GlobalEvents</include>
+        <event-block sid="415901707155797">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="992006939484653" type="door">
+                    <param id="0" name="Object">jumpHitbox</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="860617047347937" type="door">
+                    <param id="0" name="Instance variable">opened</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="11" name="Set enabled" sid="238761460714843" type="jumpHitbox">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="298900361487073" type="jumpHitbox" />
+                <action id="-9" name="Destroy" sid="759950257382820" type="jumpControlbox" />
+                <action behavior="Fade" id="1" name="Start fade" sid="184462748441435" type="jumpSprite" />
+            </actions>
+        </event-block>
+        <event-block sid="640135943569146">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="942413030996532" type="door">
+                    <param id="0" name="Object">littleSprite</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="604316581984548" type="door">
+                    <param id="0" name="Instance variable">opened</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="11" name="Set enabled" sid="999564645230499" type="littleSprite">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="850979478006524" type="littleControlbox" />
+                <action behavior="Fade" id="1" name="Start fade" sid="622102143288114" type="littleSprite" />
+            </actions>
+        </event-block>
+        <event-block any="1" sid="676562320391481">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="960996261038414" type="slidingSwitchHitbox">
+                    <param id="0" name="Object">characterHitbox</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="726058159796842" type="slidingSwitchHitbox">
+                    <param id="0" name="Object">littleSprite</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="339715525696127" type="slidingSwitchHitbox">
+                    <param id="0" name="Object">jumpHitbox</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="636945108935791">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="482769028012973" type="movingPlatform">
+                            <param id="0" name="Instance variable">isDown</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="216951260658804" type="movingPlatform">
+                            <param id="0" name="Animation">&quot;MovingDown&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="107643391955408" type="movingPlatformSolid">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="617914833196047" type="movingPlatform">
+                            <param id="0" name="Instance variable">isDown</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>

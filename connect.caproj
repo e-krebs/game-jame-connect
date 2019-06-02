@@ -152,6 +152,9 @@
                 <behavior-type name="Solid" sid="132410019460286">
                     <behavior id="solid" />
                 </behavior-type>
+                <behavior-type name="Fade" sid="716536093319931">
+                    <behavior id="Fade" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="7" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="219500881766560" speed="5">
@@ -210,28 +213,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="exitHitbox0" sid="124626518274736">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="win" sid="301914884994267" type="boolean" />
-            </instance-variables>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="595740724311750" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\squarexit.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="exitHitbox1" sid="510909794781536">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="win" sid="955288036549898" type="boolean" />
-            </instance-variables>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="716733895293756" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Downloads\squarexit1.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="win" sid="376013322440729">
             <plugin id="Text" />
         </object-type>
@@ -241,6 +222,11 @@
                 <instance-variable name="isconnected" sid="745036239584477" type="boolean" />
                 <instance-variable name="distance" sid="613077281209936" type="number" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="Fade" sid="457840313418521">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="7" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="691560324865896" speed="3">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -759,10 +745,73 @@
             <texture original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\ERIS scifi_platformTiles_32x32.png" />
             <tiles />
         </object-type>
+        <object-type name="movingPlatform" sid="714183089512976">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="isDown" sid="150786774632541" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="165176081440773" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\PlatfromMovingUp6.png" />
+                </animation>
+                <animation framecount="6" loop="0" name="MovingUp" pingpong="0" repeatcount="1" repeatto="0" sid="613656568226334" speed="4">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\PlatfromMovingUp1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\PlatfromMovingUp2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\PlatfromMovingUp3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\PlatfromMovingUp4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\PlatfromMovingUp5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\PlatfromMovingUp6.png" />
+                </animation>
+                <animation framecount="6" loop="0" name="MovingDown" pingpong="0" repeatcount="1" repeatto="0" sid="539568060679771" speed="4">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\PlatfromMovingUp6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\PlatfromMovingUp5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\PlatfromMovingUp4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\PlatfromMovingUp3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\PlatfromMovingUp2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\PlatfromMovingUp1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="movingPlatformBox" sid="469839762126079">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="542385292841345">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="428673887070796" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\boxes\square11.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="movingPlatformSolid" sid="213839367742097">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="499604282609856">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="978178062571970" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\PlatfromMovingHitbox0.png">
+                        <collision-poly>
+                            <point x="0.0104167" y="0.04" />
+                            <point x="0.5" y="0" />
+                            <point x="0.989583" y="0.04" />
+                            <point x="0.947917" y="0.48" />
+                            <point x="0.979167" y="0.92" />
+                            <point x="0.5" y="0.96" />
+                            <point x="0.0208333" y="0.92" />
+                            <point x="0.0520833" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>_Demo Level.xml</layout>
         <layout>_WinLayout.xml</layout>
         <layout>TitleScreen.xml</layout>
         <layout>StartLayout.xml</layout>

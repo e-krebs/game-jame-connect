@@ -677,7 +677,7 @@
                         <opacity>1</opacity>
                     </world>
                     <tilemap-data>
-                        <width>162</width>
+                        <width>190</width>
                         <height>23</height>
                         <max-width>190</max-width>
                         <max-height>23</max-height>
@@ -1063,6 +1063,15 @@
                         <behavior-instance type="Solid">
                             <properties>
                                 <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>3</fade-out-time>
+                                <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>

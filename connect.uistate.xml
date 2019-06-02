@@ -10,9 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">_Demo Level</layout>
         <layout active="1" order="2">FinalLayout</layout>
-        <event-sheet order="1">GlobalEvents</event-sheet>
+        <event-sheet order="0">GlobalEvents</event-sheet>
+        <event-sheet order="1">FinalEvents</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -24,7 +24,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="0" path="event-folder/" />
+        <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
@@ -35,8 +35,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/littleSprite/" />
         <folder expanded="1" path="animation-folder/littleControlbox/" />
         <folder expanded="1" path="animation-folder/sign/" />
-        <folder expanded="1" path="animation-folder/exitHitbox0/" />
-        <folder expanded="1" path="animation-folder/exitHitbox1/" />
         <folder expanded="1" path="animation-folder/jumpSprite/" />
         <folder expanded="1" path="animation-folder/rock/" />
         <folder expanded="1" path="animation-folder/button/" />
@@ -62,5 +60,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/BGbrokenLS0/" />
         <folder expanded="1" path="animation-folder/BGbrokenJS0/" />
         <folder expanded="1" path="animation-folder/ISC/" />
+        <folder expanded="1" path="animation-folder/movingPlatform/" />
+        <folder expanded="1" path="animation-folder/movingPlatformBox/" />
+        <folder expanded="1" path="animation-folder/movingPlatformSolid/" />
     </folders-expanded>
 </c2uistate>
