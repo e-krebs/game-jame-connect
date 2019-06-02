@@ -681,6 +681,9 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="568960305047174" speed="0">
                     <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\boxes\square11.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
         <object-type name="TiledBackground2" sid="579720339303278">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\Frédéric\Documents\GameJam\TOKYO City Background\City Background Final.png" />
@@ -766,7 +769,7 @@
         <event-sheet>TitleEvents.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="83" />
+        <global-instance type="Keyboard" uid="160" />
     </global-instances>
     <sounds-folder />
     <music-folder />
