@@ -5,7 +5,9 @@
     <events>
         <event-block sid="281631287094215">
             <conditions>
-                <condition id="1" name="On any key pressed" sid="690842011761615" type="Keyboard" />
+                <condition id="0" name="On key pressed" sid="690842011761615" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-43" name="Go to next/previous layout" sid="556927733237362" type="System">
