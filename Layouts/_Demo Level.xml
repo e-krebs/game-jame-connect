@@ -1216,6 +1216,7 @@
                     </properties>
                     <instance-variables>
                         <isconnected>false</isconnected>
+                        <distance>130</distance>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -1315,6 +1316,7 @@
                     </properties>
                     <instance-variables>
                         <isconnected>false</isconnected>
+                        <distance>130</distance>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

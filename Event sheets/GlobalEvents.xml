@@ -12,9 +12,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" sid="566708803618495" type="System">
-                            <param id="0" name="Layout">_Demo Level</param>
-                        </action>
+                        <action id="-26" name="Restart layout" sid="566708803618495" type="System" />
                     </actions>
                 </event-block>
                 <event-block sid="375723076565042">
@@ -89,6 +87,68 @@
         </event-group>
         <event-group description="" sid="448079553427461" title="connecting">
             <sub-events>
+                <event-block sid="514549297262795">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="936589290884309" type="characterHitbox">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">littleSprite.X - littleSprite.distance </param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="704012828106336" type="littleSprite">
+                            <param id="0" name="Instance variable">isconnected</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="756294594195958" type="characterHitbox">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="642442364566354">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="835542677746085" type="characterHitbox">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">littleSprite.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="598183172592462" type="littleSprite">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="918089262957096">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="749578119344112" type="characterHitbox">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">jumpHitbox.X - jumpSprite.distance</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="808947757898934" type="jumpSprite">
+                            <param id="0" name="Instance variable">isconnected</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="538333714002740" type="characterHitbox">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="431377121934407">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="299059967983542" type="characterHitbox">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">jumpSprite.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="650033959738803" type="jumpHitbox">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-block sid="384011625891410">
                     <conditions>
                         <condition id="1" name="Is overlapping another object" sid="435577690255698" type="characterHitbox">
@@ -127,17 +187,6 @@
                             <actions>
                                 <action id="4" name="Set animation" sid="181162480405070" type="jumpSprite">
                                     <param id="0" name="Animation">&quot;Move&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="351282881066973">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="141763338722999" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="625628522415369" type="jumpSprite">
-                                    <param id="0" name="Animation">&quot;Idle&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -211,7 +260,7 @@
                                     <conditions>
                                         <condition id="-1" name="Compare X" sid="385473424919786" type="characterHitbox">
                                             <param id="0" name="Comparison">2</param>
-                                            <param id="1" name="X co-ordinate">littleSprite.X</param>
+                                            <param id="1" name="X co-ordinate">littleSprite.X - littleSprite.distance</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -225,7 +274,11 @@
                                     <sub-events>
                                         <event-block sid="511700909774348">
                                             <conditions>
-                                                <condition behavior="Platform" id="0" name="Is moving" sid="340665093909700" type="characterHitbox" />
+                                                <condition id="-8" name="Compare two values" sid="676803183206398" type="System">
+                                                    <param id="0" name="First value">characterHitbox.Platform.VectorX</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
                                             </conditions>
                                             <actions>
                                                 <action behavior="Platform" id="7" name="Simulate control" sid="412024197286345" type="littleSprite">
@@ -240,7 +293,10 @@
                                 </event-block>
                                 <event-block sid="184608104219005">
                                     <conditions>
-                                        <condition id="-22" name="Else" sid="744463637857633" type="System" />
+                                        <condition id="-1" name="Compare X" sid="744463637857633" type="characterHitbox">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="X co-ordinate">littleSprite.X - littleSprite.distance - 5</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action behavior="Platform" id="7" name="Simulate control" sid="783668443249965" type="characterHitbox">
@@ -253,7 +309,11 @@
                                     <sub-events>
                                         <event-block sid="976405087375300">
                                             <conditions>
-                                                <condition behavior="Platform" id="0" name="Is moving" sid="933604047320027" type="characterHitbox" />
+                                                <condition id="-8" name="Compare two values" sid="694222467687607" type="System">
+                                                    <param id="0" name="First value">characterHitbox.Platform.VectorX</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
                                             </conditions>
                                             <actions>
                                                 <action behavior="Platform" id="7" name="Simulate control" sid="637355463869745" type="littleSprite">
@@ -280,7 +340,7 @@
                                     <conditions>
                                         <condition id="-1" name="Compare X" sid="179014013138130" type="characterHitbox">
                                             <param id="0" name="Comparison">2</param>
-                                            <param id="1" name="X co-ordinate">jumpHitbox.X</param>
+                                            <param id="1" name="X co-ordinate">jumpHitbox.X - jumpSprite.distance</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -294,7 +354,11 @@
                                     <sub-events>
                                         <event-block sid="517590693000090">
                                             <conditions>
-                                                <condition behavior="Platform" id="0" name="Is moving" sid="156934202601552" type="characterHitbox" />
+                                                <condition id="-8" name="Compare two values" sid="668709436193315" type="System">
+                                                    <param id="0" name="First value">characterHitbox.Platform.VectorX</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
                                             </conditions>
                                             <actions>
                                                 <action behavior="Platform" id="7" name="Simulate control" sid="724373482377628" type="jumpHitbox">
@@ -309,7 +373,10 @@
                                 </event-block>
                                 <event-block sid="439410262199783">
                                     <conditions>
-                                        <condition id="-22" name="Else" sid="502608645014418" type="System" />
+                                        <condition id="-1" name="Compare X" sid="502608645014418" type="characterHitbox">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="X co-ordinate">jumpHitbox.X - jumpSprite.distance - 5</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action behavior="Platform" id="7" name="Simulate control" sid="178540530463899" type="characterHitbox">
@@ -322,7 +389,11 @@
                                     <sub-events>
                                         <event-block sid="964346270244690">
                                             <conditions>
-                                                <condition behavior="Platform" id="0" name="Is moving" sid="306326092431409" type="characterHitbox" />
+                                                <condition id="-8" name="Compare two values" sid="798746809630859" type="System">
+                                                    <param id="0" name="First value">characterHitbox.Platform.VectorX</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
                                             </conditions>
                                             <actions>
                                                 <action behavior="Platform" id="7" name="Simulate control" sid="861124515223856" type="jumpHitbox">
@@ -385,7 +456,11 @@
                                     <sub-events>
                                         <event-block sid="324917708592944">
                                             <conditions>
-                                                <condition behavior="Platform" id="0" name="Is moving" sid="962391303550611" type="characterHitbox" />
+                                                <condition id="-8" name="Compare two values" sid="261743548309678" type="System">
+                                                    <param id="0" name="First value">characterHitbox.Platform.VectorX</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
                                             </conditions>
                                             <actions>
                                                 <action behavior="Platform" id="7" name="Simulate control" sid="400398863897917" type="littleSprite">
@@ -413,7 +488,11 @@
                                     <sub-events>
                                         <event-block sid="254623343952228">
                                             <conditions>
-                                                <condition behavior="Platform" id="0" name="Is moving" sid="180057663674822" type="characterHitbox" />
+                                                <condition id="-8" name="Compare two values" sid="604178141461474" type="System">
+                                                    <param id="0" name="First value">characterHitbox.Platform.VectorX</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
                                             </conditions>
                                             <actions>
                                                 <action behavior="Platform" id="7" name="Simulate control" sid="739988106164812" type="littleSprite">
@@ -454,7 +533,11 @@
                                     <sub-events>
                                         <event-block sid="129177231936686">
                                             <conditions>
-                                                <condition behavior="Platform" id="0" name="Is moving" sid="927675387211379" type="characterHitbox" />
+                                                <condition id="-8" name="Compare two values" sid="814542491396769" type="System">
+                                                    <param id="0" name="First value">characterHitbox.Platform.VectorX</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
                                             </conditions>
                                             <actions>
                                                 <action behavior="Platform" id="7" name="Simulate control" sid="159603579507690" type="jumpHitbox">
@@ -482,7 +565,11 @@
                                     <sub-events>
                                         <event-block sid="951217767639587">
                                             <conditions>
-                                                <condition behavior="Platform" id="0" name="Is moving" sid="560320723813034" type="characterHitbox" />
+                                                <condition id="-8" name="Compare two values" sid="553040927057644" type="System">
+                                                    <param id="0" name="First value">characterHitbox.Platform.VectorX</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
                                             </conditions>
                                             <actions>
                                                 <action behavior="Platform" id="7" name="Simulate control" sid="521518529560199" type="jumpHitbox">
@@ -566,7 +653,11 @@
                                 <condition id="-8" name="Is boolean instance variable set" sid="209085906459102" type="littleSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
-                                <condition behavior="Platform" id="0" name="Is moving" sid="673894058493947" type="characterHitbox" />
+                                <condition id="-8" name="Compare two values" sid="522977459971147" type="System">
+                                    <param id="0" name="First value">characterHitbox.Platform.VectorX</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="7" name="Set mirrored" sid="191062215467028" type="littleSprite">
@@ -582,7 +673,11 @@
                                 <condition id="-8" name="Is boolean instance variable set" sid="798818605224589" type="jumpSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
-                                <condition behavior="Platform" id="0" name="Is moving" sid="200961372549934" type="characterHitbox" />
+                                <condition id="-8" name="Compare two values" sid="875077058890691" type="System">
+                                    <param id="0" name="First value">characterHitbox.Platform.VectorX</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="7" name="Set mirrored" sid="644542061773122" type="jumpSprite">
@@ -624,7 +719,11 @@
                                 <condition id="-8" name="Is boolean instance variable set" sid="738375979764535" type="littleSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
-                                <condition behavior="Platform" id="0" name="Is moving" sid="470727324036139" type="characterHitbox" />
+                                <condition id="-8" name="Compare two values" sid="623179175281295" type="System">
+                                    <param id="0" name="First value">characterHitbox.Platform.VectorX</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="7" name="Set mirrored" sid="939585374645151" type="littleSprite">
@@ -640,7 +739,11 @@
                                 <condition id="-8" name="Is boolean instance variable set" sid="932078640485756" type="jumpSprite">
                                     <param id="0" name="Instance variable">isconnected</param>
                                 </condition>
-                                <condition behavior="Platform" id="0" name="Is moving" sid="151775547629529" type="characterHitbox" />
+                                <condition id="-8" name="Compare two values" sid="909446480858792" type="System">
+                                    <param id="0" name="First value">characterHitbox.Platform.VectorX</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="7" name="Set mirrored" sid="408747882038924" type="jumpSprite">
@@ -1033,9 +1136,15 @@
         </event-group>
         <event-group description="" sid="992416463757464" title="spikes">
             <sub-events>
-                <event-block sid="517276970203889">
+                <event-block any="1" sid="517276970203889">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="234285407432893" type="characterHitbox">
+                            <param id="0" name="Object">spike</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="395262095595311" type="littleSprite">
+                            <param id="0" name="Object">spike</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="350448984464918" type="jumpHitbox">
                             <param id="0" name="Object">spike</param>
                         </condition>
                     </conditions>
@@ -1147,6 +1256,77 @@
                             <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="104199470696483" title="slidingDoorBottom - switch">
+            <sub-events>
+                <event-block sid="878823730107098">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="240326722621749" type="slidingDoorBottom">
+                            <param id="0" name="Instance variable">isOpened</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="101642729061974" type="SlidingSwitchBottomHitbox">
+                            <param id="0" name="Object">characterHitbox</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="616086027351069" type="SlidingSwitchBottomHitbox">
+                            <param id="0" name="Object">littleSprite</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="293665960885358" type="SlidingSwitchBottomHitbox">
+                            <param id="0" name="Object">jumpHitbox</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="438125580759913" type="slidingDoorBottomSwitch">
+                            <param id="0" name="Animation">&quot;Closed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="116655079489223" type="slidingDoorBottom">
+                            <param id="0" name="Animation">&quot;Closing&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="245984967939913" type="slidingDoorBottom">
+                            <param id="0" name="Instance variable">isOpened</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="589460343968267">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="154443152496537" type="SlidingSwitchBottomHitbox">
+                            <param id="0" name="Object">characterHitbox</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="326087204979057" type="SlidingSwitchBottomHitbox">
+                            <param id="0" name="Object">littleSprite</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="567313995165234" type="SlidingSwitchBottomHitbox">
+                            <param id="0" name="Object">jumpHitbox</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="956274822688915">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="502320928729003" type="slidingDoorBottom">
+                                    <param id="0" name="Instance variable">isOpened</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="209732092242309" type="slidingDoorBottomSwitch">
+                                    <param id="0" name="Animation">&quot;Opened&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="950281199470444" type="slidingDoorBottom">
+                                    <param id="0" name="Animation">&quot;Opening&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="857815641247189" type="slidingDoorBottom">
+                                    <param id="0" name="Instance variable">isOpened</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

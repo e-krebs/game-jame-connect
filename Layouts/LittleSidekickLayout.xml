@@ -875,6 +875,7 @@
                     </properties>
                     <instance-variables>
                         <isconnected>false</isconnected>
+                        <distance>130</distance>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">

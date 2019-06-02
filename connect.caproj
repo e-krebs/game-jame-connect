@@ -140,6 +140,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="isconnected" sid="578583624688854" type="boolean" />
+                <instance-variable name="distance" sid="750491042878310" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="248310088661046">
@@ -238,6 +239,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="isconnected" sid="745036239584477" type="boolean" />
+                <instance-variable name="distance" sid="613077281209936" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="7" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="691560324865896" speed="3">
@@ -474,7 +476,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="871592883522791" speed="5">
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="871592883522791" speed="0">
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor1.png">
                         <collision-poly>
                             <point x="0.125" y="0.025" />
@@ -615,6 +617,72 @@
         </object-type>
         <object-type name="titleText" sid="753138080067809">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="slidingDoorBottom" sid="524133867202151">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="isOpened" sid="809219273300171" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="503899492779737">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="979129156620511" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor2.png">
+                        <collision-poly>
+                            <point x="0.09375" y="0.01875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.875" y="0.025" />
+                            <point x="1" y="0.5" />
+                            <point x="0.875" y="0.975" />
+                            <point x="0.5" y="1" />
+                            <point x="0.09375" y="0.98125" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="Opening" pingpong="0" repeatcount="1" repeatto="0" sid="568045726005798" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor2.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor2Opening.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor2Open.png" />
+                </animation>
+                <animation framecount="3" loop="0" name="Closing" pingpong="0" repeatcount="1" repeatto="0" sid="769734376547076" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor2Open.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor2Opening.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\IndustrialDoor2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="slidingDoorBottomSwitch" sid="635396021668162">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Closed" pingpong="0" repeatcount="1" repeatto="0" sid="829268756596644" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\SwitchSlidingDoorClose.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.625" y="0.5" />
+                            <point x="0.65625" y="0.828125" />
+                            <point x="0.5" y="1" />
+                            <point x="0.34375" y="0.828125" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Opened" pingpong="0" repeatcount="1" repeatto="0" sid="621761368378027" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\SwitchSlidingDoorOpen.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SlidingSwitchBottomHitbox" sid="200088128322104">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="568960305047174" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\boxes\square11.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
