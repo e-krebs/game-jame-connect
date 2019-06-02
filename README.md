@@ -18,6 +18,14 @@ There's 2 different sidekicks:
 - a _small_ one, he can reach specific spots because of his size
 - a _double-jumping_ one, he can can reach specific spots because of his _double-jump_ ability
 
+### Extra Credit Challenges
+
+- [x] Extra Open: [sources are available here](https://github.com/e-krebs/game-jame-connect).
+- [x] Extra Remix: we reused the ISC logo [from the game Eden](https://www.eden-the-game.com/) we both worked on.
+- [ ] "Extra"-Vert
+- [ ] Extra Monochromatic
+- [x] Extra Kuleshov Effect: It's up to you to find where it is ;)
+
 ## Inspiration
 
 The inspiration came from _Hana No Star Kaidou_, a (very bad) Famicom game.
@@ -26,3 +34,4 @@ The inspiration came from _Hana No Star Kaidou_, a (very bad) Famicom game.
 ## Tools
 
 This game is made using [Construct 2](https://www.scirra.com/construct2).
+> See full credits at the end of the game.
