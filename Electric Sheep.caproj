@@ -878,8 +878,9 @@
         <event-sheet>JumpSidekickRight.xml</event-sheet>
         <event-sheet>JumpSidekickLeft.xml</event-sheet>
         <event-sheet>TitleEvents.xml</event-sheet>
-        <event-sheet>WinEventSheet.xml</event-sheet>
+        <event-sheet>Win1EventSheet.xml</event-sheet>
         <event-sheet>CreditsLayout.xml</event-sheet>
+        <event-sheet>Win2EventSheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="160" />
@@ -910,6 +911,8 @@
         <file name="SlidingDoor.ogg" />
         <file name="Chains.ogg" />
         <file name="jumpPlayer.ogg" />
+        <file name="Levelsuccess.ogg" />
+        <file name="Win2.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

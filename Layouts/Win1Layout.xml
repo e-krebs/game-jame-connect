@@ -2,7 +2,7 @@
 <c2layout>
     <name>Win1Layout</name>
     <sid>717080204001814</sid>
-    <event-sheet>WinEventSheet</event-sheet>
+    <event-sheet>Win1EventSheet</event-sheet>
     <size>
         <width>1280</width>
         <height>736</height>
