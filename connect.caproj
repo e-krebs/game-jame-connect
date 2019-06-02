@@ -681,6 +681,68 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="568960305047174" speed="0">
                     <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\boxes\square11.png" />
+        <object-type name="TiledBackground2" sid="579720339303278">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Frédéric\Documents\GameJam\TOKYO City Background\City Background Final.png" />
+        </object-type>
+        <object-type name="Lvl1BGTilemap" sid="686290689561768">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\Frédéric\Documents\GameJam\ERIS scifi_platformTiles_32x32.png" />
+            <tiles />
+        </object-type>
+        <object-type name="BGbrokenLS0" sid="903809331574439">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="727056235342575" speed="5">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.510638" original-source="C:\Users\Frédéric\Documents\GameJam\ConnectSpriteSheet\LittleSBroken0.png">
+                        <collision-poly>
+                            <point x="0.0888889" y="0.0851064" />
+                            <point x="0.488889" y="0.0851064" />
+                            <point x="0.844444" y="0.148936" />
+                            <point x="0.888889" y="0.893617" />
+                            <point x="0.488889" y="0.914894" />
+                            <point x="0.111111" y="0.893617" />
+                            <point x="0.311111" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BGbrokenJS0" sid="934194362451541">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="465976811330391" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="C:\Users\Frédéric\Documents\GameJam\ConnectSpriteSheet\JumpSBroken0.png">
+                        <collision-poly>
+                            <point x="0.442308" y="0.433962" />
+                            <point x="0.5" y="0.150943" />
+                            <point x="0.884615" y="0.113208" />
+                            <point x="0.807692" y="0.490566" />
+                            <point x="0.788462" y="0.792453" />
+                            <point x="0.5" y="0.924528" />
+                            <point x="0.0961538" y="0.90566" />
+                            <point x="0.423077" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ISC" sid="314323678436713">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="900095635858126" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Frédéric\Documents\GameJam\ConnectSpriteSheet\ISCPix.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.15625" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.84375" y="0.15625" />
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.8125" y="0.8125" />
+                            <point x="0.5" y="0.96875" />
+                            <point x="0.1875" y="0.8125" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
