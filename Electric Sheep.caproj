@@ -859,6 +859,14 @@
         <object-type name="Audio" sid="128111892986385">
             <plugin id="Audio" />
         </object-type>
+        <object-type name="TiledBackground3" sid="361799530645718">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Frédéric\Documents\GameJam\ConnectSpriteSheet\City Background Final.png" />
+        </object-type>
+        <object-type name="TiledBackground4" sid="746760495050156">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Frédéric\Documents\GameJam\ConnectSpriteSheet\City Background Final.png" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
