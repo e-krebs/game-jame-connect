@@ -272,7 +272,7 @@
                             <conditions>
                                 <condition id="-1" name="Compare X" sid="744463637857633" type="characterHitbox">
                                     <param id="0" name="Comparison">4</param>
-                                    <param id="1" name="X co-ordinate">littleSprite.X - littleSprite.distance - 5</param>
+                                    <param id="1" name="X co-ordinate">littleSprite.X - littleSprite.distance </param>
                                 </condition>
                             </conditions>
                             <actions>

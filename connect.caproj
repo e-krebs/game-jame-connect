@@ -772,13 +772,8 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="movingPlatformBox" sid="469839762126079">
+        <object-type name="movingPlatformSwitch" sid="469839762126079">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="542385292841345">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="428673887070796" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\boxes\square11.png" />

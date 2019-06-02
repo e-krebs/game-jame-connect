@@ -96,7 +96,7 @@
                     <conditions>
                         <condition id="-1" name="Compare X" sid="294453288207595" type="characterHitbox">
                             <param id="0" name="Comparison">4</param>
-                            <param id="1" name="X co-ordinate">jumpHitbox.X - jumpSprite.distance - 5</param>
+                            <param id="1" name="X co-ordinate">jumpHitbox.X - jumpSprite.distance</param>
                         </condition>
                     </conditions>
                     <actions>

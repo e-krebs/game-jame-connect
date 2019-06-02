@@ -42,13 +42,13 @@
         </event-block>
         <event-block any="1" sid="676562320391481">
             <conditions>
-                <condition id="1" name="Is overlapping another object" sid="960996261038414" type="slidingSwitchHitbox">
+                <condition id="1" name="Is overlapping another object" sid="960996261038414" type="movingPlatformSwitch">
                     <param id="0" name="Object">characterHitbox</param>
                 </condition>
-                <condition id="1" name="Is overlapping another object" sid="726058159796842" type="slidingSwitchHitbox">
+                <condition id="1" name="Is overlapping another object" sid="726058159796842" type="movingPlatformSwitch">
                     <param id="0" name="Object">littleSprite</param>
                 </condition>
-                <condition id="1" name="Is overlapping another object" sid="339715525696127" type="slidingSwitchHitbox">
+                <condition id="1" name="Is overlapping another object" sid="339715525696127" type="movingPlatformSwitch">
                     <param id="0" name="Object">jumpHitbox</param>
                 </condition>
             </conditions>
