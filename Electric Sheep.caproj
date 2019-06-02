@@ -845,7 +845,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="819025816305031" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\Credits.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\CreditsFinal.png">
                         <collision-poly>
                             <point x="0" y="0" />
                             <point x="0.999219" y="0.0013587" />

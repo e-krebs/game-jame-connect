@@ -12,7 +12,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="1">TitleScreen</layout>
         <layout order="4">FinalLayout</layout>
-        <event-sheet active="1" order="0">GlobalEvents</event-sheet>
+        <layout active="1" order="5">CreditsLayout</layout>
+        <event-sheet order="0">GlobalEvents</event-sheet>
         <event-sheet order="2">FinalEvents</event-sheet>
         <event-sheet order="3">Win1EventSheet</event-sheet>
     </open-tabs>
@@ -26,9 +27,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="0" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
-        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="0" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/platform/" />
