@@ -867,6 +867,90 @@
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\Frédéric\Documents\GameJam\ConnectSpriteSheet\City Background Final.png" />
         </object-type>
+        <object-type name="lvl2BGTilemap" sid="807796769189434">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\Frédéric\Documents\GameJam\ConnectSpriteSheet\ERIS scifi_platformTiles_32x32.png" />
+            <tiles />
+        </object-type>
+        <object-type name="BGbrokenJS1" sid="888489603019318">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="566355618756953" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="C:\Users\Frédéric\Documents\GameJam\ConnectSpriteSheet\JumpSBroken1.png">
+                        <collision-poly>
+                            <point x="0.115385" y="0.113208" />
+                            <point x="0.5" y="0.188679" />
+                            <point x="0.557692" y="0.433962" />
+                            <point x="0.576923" y="0.490566" />
+                            <point x="0.903846" y="0.90566" />
+                            <point x="0.5" y="0.867925" />
+                            <point x="0.211538" y="0.792453" />
+                            <point x="0.192308" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BGbrokenLS1" sid="554456329713804">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="403450640002238" speed="5">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.510638" original-source="C:\Users\Frédéric\Documents\GameJam\ConnectSpriteSheet\LittleSBroken0.png">
+                        <collision-poly>
+                            <point x="0.0888889" y="0.0851064" />
+                            <point x="0.488889" y="0.0851064" />
+                            <point x="0.844444" y="0.148936" />
+                            <point x="0.888889" y="0.893617" />
+                            <point x="0.488889" y="0.914894" />
+                            <point x="0.111111" y="0.893617" />
+                            <point x="0.311111" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lvl3BGTilemap" sid="320101654326964">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\Frédéric\Documents\GameJam\ConnectSpriteSheet\ERIS scifi_platformTiles_32x32.png" />
+            <tiles />
+        </object-type>
+        <object-type name="BGbrokenJS2" sid="833669245343116">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="595920794830128" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="C:\Users\Frédéric\Documents\GameJam\ConnectSpriteSheet\JumpSBroken1.png">
+                        <collision-poly>
+                            <point x="0.115385" y="0.113208" />
+                            <point x="0.5" y="0.188679" />
+                            <point x="0.557692" y="0.433962" />
+                            <point x="0.576923" y="0.490566" />
+                            <point x="0.903846" y="0.90566" />
+                            <point x="0.5" y="0.867925" />
+                            <point x="0.211538" y="0.792453" />
+                            <point x="0.192308" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BGbrokenLS2" sid="186369619847392">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="156155365268306" speed="5">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.510638" original-source="C:\Users\Frédéric\Documents\GameJam\ConnectSpriteSheet\LittleSBroken1.png">
+                        <collision-poly>
+                            <point x="0.155556" y="0.148936" />
+                            <point x="0.488889" y="0.0851064" />
+                            <point x="0.911111" y="0.0851064" />
+                            <point x="0.688889" y="0.489362" />
+                            <point x="0.888889" y="0.893617" />
+                            <point x="0.488889" y="0.914894" />
+                            <point x="0.111111" y="0.893617" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
