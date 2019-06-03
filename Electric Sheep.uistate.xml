@@ -10,15 +10,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="2">TitleScreen</layout>
-        <layout active="1" order="5">FinalLayout</layout>
-        <layout order="6">CreditsLayout</layout>
-        <layout order="7">LittleSidekickLayout</layout>
-        <layout order="8">StartLayout</layout>
-        <layout order="9">JumpSidekickLayout</layout>
-        <event-sheet order="1">GlobalEvents</event-sheet>
-        <event-sheet order="3">FinalEvents</event-sheet>
-        <event-sheet order="4">Win1EventSheet</event-sheet>
+        <layout order="1">TitleScreen</layout>
+        <layout order="4">FinalLayout</layout>
+        <layout order="5">CreditsLayout</layout>
+        <layout order="6">LittleSidekickLayout</layout>
+        <layout order="7">StartLayout</layout>
+        <layout order="8">JumpSidekickLayout</layout>
+        <event-sheet order="0">GlobalEvents</event-sheet>
+        <event-sheet active="1" order="2">FinalEvents</event-sheet>
+        <event-sheet order="3">Win1EventSheet</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -30,9 +30,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="0" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="0" path="event-folder/" />
+        <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
-        <folder expanded="0" path="sound-folder/" />
+        <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/platform/" />

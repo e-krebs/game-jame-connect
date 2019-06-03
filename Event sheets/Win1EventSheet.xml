@@ -29,6 +29,9 @@
                 <condition id="-2" name="On start of layout" sid="653957363241207" type="System" />
             </conditions>
             <actions>
+                <action id="6" name="Stop" sid="450984566604596" type="Audio">
+                    <param id="0" name="Tag">&quot;success&quot;</param>
+                </action>
                 <action id="6" name="Stop" sid="993564081678867" type="Audio">
                     <param id="0" name="Tag">&quot;bg&quot;</param>
                 </action>

@@ -26,11 +26,11 @@
                         <action id="6" name="Stop" sid="172348806024226" type="Audio">
                             <param id="0" name="Tag">&quot;bg&quot;</param>
                         </action>
-                        <action id="0" name="Play" sid="846341488788335" type="Audio">
-                            <param id="0" name="Audio file">Levelsuccess</param>
-                            <param id="2" name="Loop">0</param>
+                        <action id="0" name="Play" sid="221457821608299" type="Audio">
+                            <param id="0" name="Audio file">Win2</param>
+                            <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">-5</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;end&quot;</param>
                         </action>
                         <action behavior="Platform" id="0" name="Set ignoring input" sid="238761460714843" type="jumpHitbox">
                             <param id="0" name="Input">0</param>
@@ -41,12 +41,6 @@
                         <action id="-25" name="Go to layout (by name)" sid="423828285264329" type="System">
                             <param id="0" name="Layout">&quot;Win2Layout&quot;</param>
                         </action>
-                        <action id="0" name="Play" sid="221457821608299" type="Audio">
-                            <param id="0" name="Audio file">Win2</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">-5</param>
-                            <param id="1" name="Tag (optional)">&quot;end&quot;</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="338154597270273">
@@ -56,12 +50,6 @@
                     <actions>
                         <action id="6" name="Stop" sid="925195617980272" type="Audio">
                             <param id="0" name="Tag">&quot;bg&quot;</param>
-                        </action>
-                        <action id="0" name="Play" sid="694001870104037" type="Audio">
-                            <param id="0" name="Audio file">Levelsuccess</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-5</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action behavior="Platform" id="0" name="Set ignoring input" sid="675411090583621" type="jumpHitbox">
                             <param id="0" name="Input">0</param>
@@ -75,7 +63,7 @@
                         </action>
                         <action id="0" name="Play" sid="172805722215914" type="Audio">
                             <param id="0" name="Audio file">Background</param>
-                            <param id="2" name="Loop">0</param>
+                            <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">-15</param>
                             <param id="1" name="Tag (optional)">&quot;bg&quot;</param>
                         </action>
@@ -104,11 +92,11 @@
                         <action id="6" name="Stop" sid="924492142191328" type="Audio">
                             <param id="0" name="Tag">&quot;bg&quot;</param>
                         </action>
-                        <action id="0" name="Play" sid="595042770184616" type="Audio">
-                            <param id="0" name="Audio file">Levelsuccess</param>
-                            <param id="2" name="Loop">0</param>
+                        <action id="0" name="Play" sid="786535762012296" type="Audio">
+                            <param id="0" name="Audio file">Win2</param>
+                            <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">-5</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;end&quot;</param>
                         </action>
                         <action behavior="Platform" id="0" name="Set ignoring input" sid="999564645230499" type="littleSprite">
                             <param id="0" name="Input">0</param>
@@ -117,12 +105,6 @@
                         <action behavior="Fade" id="1" name="Start fade" sid="622102143288114" type="littleSprite" />
                         <action id="-25" name="Go to layout (by name)" sid="524331895827969" type="System">
                             <param id="0" name="Layout">&quot;Win2Layout&quot;</param>
-                        </action>
-                        <action id="0" name="Play" sid="786535762012296" type="Audio">
-                            <param id="0" name="Audio file">Win2</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">-5</param>
-                            <param id="1" name="Tag (optional)">&quot;end&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -133,12 +115,6 @@
                     <actions>
                         <action id="6" name="Stop" sid="670828117160812" type="Audio">
                             <param id="0" name="Tag">&quot;bg&quot;</param>
-                        </action>
-                        <action id="0" name="Play" sid="607453020092424" type="Audio">
-                            <param id="0" name="Audio file">Levelsuccess</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-5</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action behavior="Platform" id="0" name="Set ignoring input" sid="485973939896385" type="littleSprite">
                             <param id="0" name="Input">0</param>
@@ -151,7 +127,7 @@
                         </action>
                         <action id="0" name="Play" sid="302922824960547" type="Audio">
                             <param id="0" name="Audio file">Background</param>
-                            <param id="2" name="Loop">0</param>
+                            <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">-15</param>
                             <param id="1" name="Tag (optional)">&quot;bg&quot;</param>
                         </action>

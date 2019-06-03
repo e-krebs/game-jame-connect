@@ -845,7 +845,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="819025816305031" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\CreditsFinal.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\eprhb\Google Drive\Jeux\game jam\connect\ConnectSpriteSheet\CreditsFinal2.0.png">
                         <collision-poly>
                             <point x="0" y="0" />
                             <point x="0.999219" y="0.0013587" />
@@ -1003,8 +1003,9 @@
         <file name="SlidingDoor.ogg" />
         <file name="Chains.ogg" />
         <file name="jumpPlayer.ogg" />
-        <file name="Levelsuccess.ogg" />
         <file name="Win2.ogg" />
+        <file name="Victory.ogg" />
+        <file name="Levelsuccess-x1.5_5.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
